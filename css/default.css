@@ -82,8 +82,6 @@ pre {
    word-wrap: break-word;
 }
 
-blockquote, q { quotes: &#8220 &#8220; }
-
 blockquote:before, blockquote:after,
 q:before, q:after {
    content: '';
@@ -194,7 +192,7 @@ blockquote:before {
    font-family: arial, sans-serif;
 
    position: absolute;
-   top:  30px;
+   top:  50px;
 	left: 0;
 }
 blockquote p {
@@ -556,7 +554,7 @@ textarea:focus {
 	background-color: #3d4145;
 }
 
-textarea { min-height: 220px; }
+textarea { min-height: 150px; }
 
 label,
 legend {

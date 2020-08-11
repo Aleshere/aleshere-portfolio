@@ -12,6 +12,7 @@
          url('fonts/opensans/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: fallback;
 }
 @font-face {
     font-family: 'opensans-italic';
@@ -22,6 +23,7 @@
          url('fonts/opensans/OpenSans-Italic-webfont.svg#open_sansitalic') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: fallback;
 }
 @font-face {
     font-family: 'opensans-light';
@@ -32,6 +34,7 @@
          url('fonts/opensans/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: fallback;
 }
 @font-face {
     font-family: 'opensans-light-italic';
@@ -42,6 +45,7 @@
          url('fonts/opensans/OpenSans-LightItalic-webfont.svg#open_sanslight_italic') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: fallback;
 }
 @font-face {
     font-family: 'opensans-semibold';
@@ -52,6 +56,7 @@
          url('fonts/opensans/OpenSans-Semibold-webfont.svg#open_sanssemibold') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: fallback;
 }
 @font-face {
     font-family: 'opensans-semibold-italic';
@@ -62,6 +67,7 @@
          url('fonts/opensans/OpenSans-SemiboldItalic-webfont.svg#open_sanssemibold_italic') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: fallback;
 }
 @font-face {
     font-family: 'opensans-bold';
@@ -72,6 +78,7 @@
          url('fonts/opensans/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: fallback;
 }
 @font-face {
     font-family: 'opensans-bold-italic';
@@ -82,6 +89,7 @@
          url('fonts/opensans/OpenSans-BoldItalic-webfont.svg#open_sansbold_italic') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: fallback;
 }
 @font-face {
     font-family: 'opensans-extrabold';
@@ -92,6 +100,7 @@
          url('fonts/opensans/OpenSans-ExtraBold-webfont.svg#open_sansextrabold') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: fallback;
 }
 @font-face {
     font-family: 'opensans-extrabold-italic';
@@ -102,6 +111,7 @@
          url('fonts/opensans/OpenSans-ExtraBoldItalic-webfont.svg#open_sansextrabold_italic') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: fallback;
 }
 
 /*
@@ -116,6 +126,7 @@
          url('fonts/librebaskerville/librebaskerville-bold-webfont.svg#libre_baskervillebold') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: fallback;
 }
 @font-face {
     font-family: 'librebaskerville-italic';
@@ -126,6 +137,7 @@
          url('fonts/librebaskerville/librebaskerville-italic-webfont.svg#libre_baskervilleitalic') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: fallback;
 }
 @font-face {
     font-family: 'librebaskerville-regular';
@@ -136,6 +148,7 @@
          url('fonts/librebaskerville/librebaskerville-regular-webfont.svg#libre_baskervilleregular') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: fallback;
 }
 
 
@@ -147,11 +160,13 @@
    @font-face {
    font-family: 'opensans-semibold';
    src: url('fonts/opensans/OpenSans-Semibold-webfont.svg#open_sanssemibold') format('svg');
+   font-display: fallback;
    }
 
    @font-face {
    font-family: 'opensans-bold';
    src: url('fonts/opensans/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+   font-display: fallback;
    }
 
 }
