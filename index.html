@@ -15,9 +15,6 @@
 
 	<!-- CSS
     ================================================== -->
-   <link rel="preload" href="css/fonts.css" as="font">
-   <link rel="preload" href="css/fontello/css/fontello.css" as="font">
-   <link rel="preload" href="css/font-awesome/css/font-awesome.css" as="font">
    <link rel="stylesheet" href="css/default.css">
 	<link rel="stylesheet" href="css/layout.css">
    <link rel="stylesheet" href="css/media-queries.css">
@@ -48,8 +45,8 @@
             <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
             <li><a class="smoothscroll" href="#about">About</a></li>
 	         <li><a class="smoothscroll" href="#resume">Education</a></li>
+            <li><a class="smoothscroll" href="#extras">Know me better</a></li>
             <li><a class="smoothscroll" href="#portfolio">Works</a></li>
-            <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li>
             <li><a class="smoothscroll" href="#contact">Contact</a></li>
          </ul> <!-- end #nav -->
 
@@ -77,8 +74,12 @@
          <div class="banner-text">
             <h1 class="responsive-headline">Aleshere.</h1>
             <h3>web developer and geek creating the finest codework
-               <br>scroll for my background · click below for my portfolio</h3>
-            <button class="smoothscroll portfolioBtn">Portfolio</button>
+               <br>scroll to learn about me</h3>
+
+            <a href="#portfolio">
+               <button class="portfolioBtn">Portfolio</button>
+            </a>
+
             <hr />
             <ul class="social">
                <li><a href="https://github.com/Aleshere" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a></li>
@@ -138,7 +139,7 @@
 
                <div class="columns download">
                   <p>
-                     <a href="#" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                     <a href="#" class="button"><i class="fa fa-download"></i>Resume</a>
                   </p>
                </div>
 
@@ -258,6 +259,55 @@
    </section> <!-- Resume Section End-->
 
 
+
+     <!-- Extras Section
+   ================================================== -->
+   <section id="extras">
+
+      <div id="drag-container">
+
+          <div id="spin-container">
+              
+              <blockquote id="slideShow">
+                 <ul>
+                    <li>I used to play soccer as a midfielder</li>
+                 </ul>
+              </blockquote>
+              <blockquote id="slideShow">
+                 <ul>
+                    <li>The first programming language I crossed path with was Pascal</li>
+                 </ul>
+              </blockquote>
+              <blockquote id="slideShow">
+                 <ul>
+                    <li>In my last job I created a database of our suppliers in Excel</li>
+                 </ul>
+              </blockquote>
+              <blockquote id="slideShow">
+                 <ul>
+                    <li>I like my lattes. Sometimes I can have 3 in a day</li>
+                 </ul>
+              </blockquote>
+              <blockquote id="slideShow">
+                 <ul>
+                    <li>I can understand 5 languages.. plus Javascript</li>
+                 </ul>
+              </blockquote>
+              <blockquote id="slideShow">
+                 <ul>
+                    <li>My biggest regret is not having visited the Isle of Skye while in Scotland. Will fix sooner or later</li>
+                 </ul>
+              </blockquote>
+
+         </div>
+
+         <div id="ground"></div>
+
+      </div>
+
+   </section> <!-- Extras Section End-->
+
+
    <!-- Portfolio Section
    ================================================== -->
    <section id="portfolio">
@@ -279,7 +329,7 @@
                         <noscript><img loading='lazy' alt="instagram clone" src="images/portfolio/instaclone1.png"></noscript> 
                         <div class="overlay">
                            <div class="portfolio-item-meta">
-          					      <h4>Instagram CLone</h4>
+          					      <h4>Instagram Clone</h4>
                               <p>React js</p>
           					   </div>
                         </div>
@@ -772,32 +822,7 @@
    </section> <!-- Portfolio Section End-->
 
 
-   <!-- Testimonials Section
-   ================================================== -->
-   <section id="testimonials">
-
-        <div id="drag-container">
-
-            <div id="spin-container">
-                
-                <blockquote id="slideShow">Alessio helped me immensely</blockquote>
-                <blockquote id="slideShow">Alessio helped me immensely</blockquote>
-                <blockquote id="slideShow">Alessio helped me immensely</blockquote>
-                <blockquote id="slideShow">Alessio helped me immensely</blockquote>
-                <blockquote id="slideShow">Alessio helped me immensely</blockquote>
-                <blockquote id="slideShow">Alessio helped me immensely</blockquote>
-
-            </div>
-
-            <div id="ground"></div>
-
-        </div>
-
-
-   </section> <!-- Testimonials Section End-->
-
-
-   <!-- Contact Section
+    <!-- Contact Section
    ================================================== -->
    <section id="contact">
 
@@ -843,7 +868,7 @@
                   <div>
                      <button class="submit">Submit</button>
                      <span id="image-loader">
-                        <img alt="" src="images/loader.gif">
+                        <img alt="form submitting gif" src="images/loader.gif">
                      </span>
                   </div>
 
@@ -851,7 +876,9 @@
 				   </form> <!-- Form End -->
 
                <!-- contact-warning -->
-               <div id="message-warning"> Error</div>
+               <div id="message-warning">
+                  <i class="fa fa-times"></i>An error occurred, please try again later<br>
+               </div>
                <!-- contact-success -->
 				   <div id="message-success">
                   <i class="fa fa-check"></i>Your message was sent, thank you!<br>
@@ -919,11 +946,11 @@
    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
 
-   <!-- <script src="js/jquery.flexslider.js"></script> -->
    <script src="js/waypoints.js"></script>
    <script src="js/jquery.fittext.js"></script>
    <script src="js/magnific-popup.js"></script>
    <script src="js/init.js"></script>
+   <script src="js/slideshow.js"></script>
 
 </body>
 
