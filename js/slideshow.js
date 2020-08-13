@@ -102,7 +102,7 @@ extras.onpointerdown = function (e) {
   return false;
 };
 
-document.onmousewheel = function(e) {
+extras.onmousewheel = function(e) {
   e = e || window.event;
   var d = e.wheelDelta / 30 || -e.detail;
   radius += d;
