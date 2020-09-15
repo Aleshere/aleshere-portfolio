@@ -977,35 +977,9 @@ cite { color: var(--reddish); }
     color: var(--reddish);
     font-size: 13px;
 }
-#message-warning, #message-success {
-   display: none;
-    background: var(--greyish);
-    padding: 14px 14px;
-    margin-bottom: 36px;
-   width: 65%;
-   margin-left: 26%;
-}
-#message-warning {
-   color: #D8000C;
-   border: 4px solid #D8000C;
-   border-radius: 6px;
-}
-#message-success { 
-   color: #4F8A10;
-   border: 4px solid #4F8A10;
-   border-radius: 6px;
-}
 
-#message-warning i,
-#message-success i {
-   margin-right: 10px;
-}
-#image-loader {
-   display: none;
-   position: relative;
-   left: 18px;
-   top: 17px;
-}
+
+
 
 
 /* Twitter Feed */

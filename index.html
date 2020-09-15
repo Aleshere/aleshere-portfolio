@@ -846,8 +846,12 @@
             <div class="eight columns">
 
                <!-- form -->
-               <form action="" method="post" id="contactForm" name="contactForm">
+               <form netlify action="/submissionSuccess.html" method="POST" id="contactForm" name="contactForm" netlify-honeypot="bot-field">
 					<fieldset>
+
+                  <p class="u-visually-hidden">
+                     <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+                  </p>
 
                   <div>
 						   <label for="contactName">Name <span class="required">*</span></label>
@@ -870,24 +874,11 @@
                   </div>
 
                   <div>
-                     <button class="submit">Submit</button>
-                     <span id="image-loader">
-                        <img alt="form submitting gif" src="images/loader.gif">
-                     </span>
+                     <button type="submit" class="submit">Submit</button>
                   </div>
 
 					</fieldset>
 				   </form> <!-- Form End -->
-
-               <!-- contact-warning -->
-               <div id="message-warning">
-                  <i class="fa fa-times"></i>An error occurred, please try again later<br>
-               </div>
-               <!-- contact-success -->
-				   <div id="message-success">
-                  <i class="fa fa-check"></i>Your message was sent, thank you!<br>
-				   </div>
-
             </div>
 
 
