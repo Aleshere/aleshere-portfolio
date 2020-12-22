@@ -1,26 +1,63 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
+   
+   <!-- Global site tag (gtag.js) - Google Analytics
+   ================================================== -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-BTEEDTDPYH"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-   <!--- Basic Page Needs
+      gtag('config', 'G-BTEEDTDPYH');
+   </script>
+
+
+   <!--- General
    ================================================== -->
    <meta charset="utf-8">
-	<title>The Coding Lab</title>
-   <meta name="description" content="So you are looking for a website. Check my works, and drop me a message. I will sort you out. Experience, trust and reliability. The Coding Lab">
-   <meta name="keywords" content="web developers near me, best web developer italy, build a website good value, build a website in my area, costruirmi sito internet, realizzazione siti internet vicino a me, sviluppo siti internet, creazione siti internet, creazione siti internet vicino a me, creazione siti web, realizzazione professionale siti internet"/>
-   <meta property="og:title" content="The Coding Lab">
-   <meta property="og:url" content="https://aleshere-portfolio.netlify.app">
-   <meta property="og:description" content="So you are looking for a website. Check my works, and drop me a message. I will sort you out. Experience, trust and reliability. The Coding Lab.">
-	
-
+   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+   <title>The Coding Lab | Build Websites and Affordable SEO</title>
+   
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.png" >   
+   
    <!-- Mobile Specific Metas
    ================================================== -->
    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
    <meta name="apple-mobile-web-app-capable" content="yes"/>
    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
-
-	<!-- CSS
+   
+   
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta name="description" content="We build web sites, create websites for small business, provide affordable seo services, and much more. Entrepreneurs and SEO specialists.">
+   <meta name="keywords" content="websites build, build pc websites, websites build company, seo services small business, seo experts, seo consultants, affordable seo services, affordable seo company,  search engine optimization, web page rankings, create websites uk, create websites for business, create websites with blog, create websites small business, create websites qr code, web site design, web site design services"/>
+   
+   
+   <!-- Facebook Card Data -->
+    <meta property="og:title" content="The Coding Lab | Build Websites and Affordable SEO" />
+    <meta property="og:url" content="https://www.thecodinglab.it" />
+    <meta property="og:description" content="We build web sites, create websites for small business, provide affordable seo services, and much more. Entrepreneurs and SEO specialists." />
+    <meta property="og:site_name" content="The Coding Lab" />
+    <meta property="og:image" content="images/favicon.png" />
+   
+    
+    <!-- Twitter Card Data -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="The Coding Lab" />
+    <meta name="twitter:description" content="We build web sites, create websites for small business, provide affordable seo services, and much more. Entrepreneurs and SEO specialists." />
+    <meta name="twitter:image" content="images/favicon.png" />
+    
+   
+   <!-- CSS
     ================================================== -->
+   <link rel="canonical" href="https://www.thecodinglab.it/">
+   <link rel="preload" as="style" href="css/fontello/css/fontello.css">
+   <link rel="preload" as="image" href="images/header-background.jpg">
+   <link rel="stylesheet" href="css/default.css">
    <link rel="stylesheet" href="css/default.css">
 	<link rel="stylesheet" href="css/layout.css">
    <link rel="stylesheet" href="css/media-queries.css">
@@ -28,11 +65,7 @@
 
    <!-- Script
    ================================================== -->
-	<script src="js/modernizr.js"></script>
-
-   <!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="images/favicon.png" >
+   <script src="js/modernizr.js"></script>
 
 </head>
 
@@ -43,20 +76,22 @@
    <header id="home">
 
       <nav id="nav-wrap">
-
+    
          <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
          <ul id="nav" class="nav">
+            
             <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
             <li><a class="smoothscroll" href="#about">About</a></li>
-	         <li><a class="smoothscroll" href="#resume">Education</a></li>
+            <li><a class="smoothscroll" href="#resume">Education</a></li>
             <li><a class="smoothscroll" href="#extras">Know me better</a></li>
             <li><a class="smoothscroll" href="#portfolio">Works</a></li>
             <li><a class="smoothscroll" href="#contact">Contact</a></li>
-         </ul> <!-- end #nav -->
-
-      </nav> <!-- end #nav-wrap -->
+            
+         </ul>
+    
+      </nav>
 
 
       <div class="bird-container bird-container--one">
@@ -111,7 +146,7 @@
 
          <div class="three columns">
 
-            <img class="profile-pic"  src="images/profilepic.jpg" alt="author picture" />
+            <img class="profile-pic" loading='lazy' src="images/profilepic.jpg" alt="author picture" />
 
          </div>
 
@@ -554,7 +589,7 @@
          <div id="modal-01" class="popup-modal mfp-hide">
 
             <div class="picture-box">
-               <video autoplay loop muted playsinline class="scale-with-grid">
+               <video autoplay loop muted playsinline class="scale-with-grid lazy" data-poster="images/portfolio/instaclone1.png">
                   <source src="images/portfolio/modals/instaclone1.mp4" type="video/mp4">
                 </video>
             </div>
@@ -577,7 +612,7 @@
          <div id="modal-02" class="popup-modal mfp-hide">
 
             <div class="picture-box">
-               <video autoplay loop muted playsinline class="scale-with-grid">
+               <video autoplay loop muted playsinline class="scale-with-grid lazy" data-poster="images/portfolio/webchat2.png">
                   <source src="images/portfolio/modals/webchatapp2.mp4" type="video/mp4">
                 </video>
             </div>
@@ -600,7 +635,7 @@
          <div id="modal-03" class="popup-modal mfp-hide">
 
             <div class="picture-box">
-               <video autoplay loop muted playsinline class="scale-with-grid">
+               <video autoplay loop muted playsinline class="scale-with-grid lazy" data-poster="images/portfolio/starwarsapi3.png">
                   <source src="images/portfolio/modals/starwars3.mp4" type="video/mp4">
                 </video>
             </div>
@@ -623,7 +658,7 @@
          <div id="modal-04" class="popup-modal mfp-hide">
 
             <div class="picture-box">
-               <video autoplay loop muted playsinline class="scale-with-grid">
+               <video autoplay loop muted playsinline class="scale-with-grid lazy" data-poster="images/portfolio/githubjobsearcher4.png">
                   <source src="images/portfolio/modals/githubjobsearcher4.mp4" type="video/mp4">
                 </video>
             </div>
@@ -646,7 +681,7 @@
          <div id="modal-05" class="popup-modal mfp-hide">
 
             <div class="picture-box">
-               <video autoplay loop muted playsinline class="scale-with-grid">
+               <video autoplay loop muted playsinline class="scale-with-grid lazy" data-poster="images/portfolio/covidtracker5.png">
                   <source src="images/portfolio/modals/covidtracker5.mp4" type="video/mp4">
                 </video>
             </div>
@@ -669,7 +704,7 @@
          <div id="modal-06" class="popup-modal mfp-hide">
 
             <div class="picture-box">
-               <video autoplay loop muted playsinline class="scale-with-grid">
+               <video autoplay loop muted playsinline class="scale-with-grid lazy" data-poster="images/portfolio/circularmotion6.png">
                   <source src="images/portfolio/modals/circularmotion6.mp4" type="video/mp4">
                 </video>
             </div>
@@ -692,7 +727,7 @@
          <div id="modal-07" class="popup-modal mfp-hide">
 
             <div class="picture-box">
-               <video autoplay loop muted playsinline class="scale-with-grid">
+               <video autoplay loop muted playsinline class="scale-with-grid lazy" data-poster="images/portfolio/flappybirds7.png">
                   <source src="images/portfolio/modals/flappybirds7.mp4" type="video/mp4">
                 </video>
             </div>
@@ -715,7 +750,7 @@
          <div id="modal-08" class="popup-modal mfp-hide">
 
             <div class="picture-box">
-               <video autoplay loop muted playsinline class="scale-with-grid">
+               <video autoplay loop muted playsinline class="scale-with-grid lazy" data-poster="images/portfolio/breakingbad8.png">
                   <source src="images/portfolio/modals/breakingbad8.mp4" type="video/mp4">
                 </video>
             </div>
@@ -738,7 +773,7 @@
          <div id="modal-09" class="popup-modal mfp-hide">
 
             <div class="picture-box">
-               <video autoplay loop muted playsinline class="scale-with-grid">
+               <video autoplay loop muted playsinline class="scale-with-grid lazy" data-poster="images/portfolio/beachresort9.png">
                   <source src="images/portfolio/modals/beachresort9.mp4" type="video/mp4">
                 </video>
             </div>
@@ -761,7 +796,7 @@
          <div id="modal-10" class="popup-modal mfp-hide">
 
             <div class="picture-box">
-               <video autoplay loop muted playsinline class="scale-with-grid">
+               <video autoplay loop muted playsinline class="scale-with-grid lazy" data-poster="images/portfolio/cleanbynature10.png">
                   <source src="images/portfolio/modals/cleanbynature10.mp4" type="video/mp4">
                 </video>
             </div>
@@ -784,7 +819,7 @@
          <div id="modal-11" class="popup-modal mfp-hide">
 
             <div class="picture-box">
-               <video autoplay loop muted playsinline class="scale-with-grid">
+               <video autoplay loop muted playsinline class="scale-with-grid lazy" data-poster="images/portfolio/alan11.png">
                   <source src="images/portfolio/modals/alan11.mp4" type="video/mp4">
                 </video>
             </div>
@@ -807,7 +842,7 @@
          <div id="modal-12" class="popup-modal mfp-hide">
 
             <div class="picture-box">
-               <video autoplay loop muted playsinline class="scale-with-grid">
+               <video autoplay loop muted playsinline class="scale-with-grid lazy" data-poster="images/portfolio/node12.png">
                   <source src="images/portfolio/modals/node12.mp4" type="video/mp4">
                 </video>
             </div>
@@ -901,12 +936,6 @@
 
 				   </div>
 
-               <div class="widget widget_tweets">
-
-                  <a class="twitter-timeline" data-height="500" data-theme="dark" href="https://twitter.com/aleshere8?ref_src=twsrc%5Etfw">Tweets by aleshere8</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-		         </div>
-
             </aside>
 
       </div>
@@ -946,12 +975,18 @@
    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-
+   
    <script src="js/waypoints.js"></script>
    <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
    <script src="js/init.js"></script>
-   <script src="js/slideshow.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script async src="js/slideshow.js"></script>
+   <script>
+      window.lazyLoadOptions = {
+         elements_selector: ".lazy"
+      };
+      </script>
+   <script async src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.0/dist/lazyload.min.js"></script>
 
 </body>
 
