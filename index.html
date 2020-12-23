@@ -81,19 +81,15 @@
          <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
          <ul id="nav" class="nav">
-            
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">About</a></li>
-            <li><a class="smoothscroll" href="#resume">Education</a></li>
-            <li><a class="smoothscroll" href="#extras">Know me better</a></li>
-            <li><a class="smoothscroll" href="#portfolio">Works</a></li>
-            <li><a class="smoothscroll" href="#contact">Contact</a></li>
+
+            <!-- Dynamically inject navbar with JQuery
+            ================================================== -->
             
          </ul>
     
       </nav>
-
-
+      
+      
       <div class="bird-container bird-container--one">
          <div class="bird bird--one"></div>
       </div>
@@ -136,6 +132,15 @@
       </p>
 
    </header> <!-- Header End -->
+   
+   <!-- START: Back To Top Button -->
+    
+   <a class="top-link hide" href="" id="js-top">
+      <svg xmlns="https://www.w3.org/TR/SVG2/" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
+      <span class="screen-reader-text">Back to top</span>
+   </a>
+   
+   <!-- END: Back To Top Button -->
 
 
    <!-- About Section
@@ -964,18 +969,21 @@
 
          </div>
 
-         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
-
       </div>
 
    </footer> <!-- Footer End-->
 
-   <!-- Java Script
+   <!-- JavaScript
    ================================================== -->
    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-   
+   <script>
+      $(document).ready(function(){
+         $('#nav').load("components/navbar.html");
+      });
+   </script>
+      
    <script src="js/waypoints.js"></script>
    <script src="js/jquery.fittext.js"></script>
    <script src="js/init.js"></script>
@@ -987,6 +995,7 @@
       };
       </script>
    <script async src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.0/dist/lazyload.min.js"></script>
+   <script src="js/backToTopBtn.js"></script>
 
 </body>
 

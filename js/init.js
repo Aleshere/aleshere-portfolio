@@ -20,7 +20,7 @@ jQuery(document).ready(function ($) {
   /* Smooth Scrolling
 ------------------------------------------------------ */
 
-  $('.smoothscroll').on('click', function (e) {
+  $('header').on('click', 'a', function (e) {
     e.preventDefault();
 
     var target = this.hash,
@@ -45,11 +45,11 @@ jQuery(document).ready(function ($) {
 ------------------------------------------------------*/
 
   const sections = $('section');
-  const navigation_links = $('#nav-wrap a');
 
   sections.waypoint({
     handler: function (event, direction) {
       let active_section;
+      const navigation_links = $('#nav-wrap a');
 
       active_section = $(this);
       if (direction === 'up') active_section = active_section.prev();
