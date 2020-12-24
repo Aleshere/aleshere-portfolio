@@ -58,7 +58,6 @@
    <link rel="preload" as="style" href="css/fontello/css/fontello.css">
    <link rel="preload" as="image" href="images/header-background.jpg">
    <link rel="stylesheet" href="css/default.css">
-   <link rel="stylesheet" href="css/default.css">
 	<link rel="stylesheet" href="css/layout.css">
    <link rel="stylesheet" href="css/media-queries.css">
    <link rel="stylesheet" href="css/magnific-popup.css">
@@ -952,24 +951,8 @@
    ================================================== -->
    <footer>
 
-      <div class="row">
-
-         <div class="twelve columns">
-
-            <ul class="social-links">
-               <li><a href="https://github.com/Aleshere" target="_blank" rel="noopener"><i class="fa fa-github"></i></a></li>
-               <li><a href="https://www.linkedin.com/in/alessioburgio/" target="_blank" rel="noopener"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="https://twitter.com/aleshere8" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="skype:.cid.48f6072e12d24f85?call" target="_blank" rel="noopener"><i class="fa fa-skype"></i></a></li>
-            </ul>
-
-            <ul class="copyright">
-               <li>&copy; Copyright 2020 thecodinglab</li>
-            </ul>
-
-         </div>
-
-      </div>
+      <!-- Dynamically inject footer with JQuery
+            ================================================== -->
 
    </footer> <!-- Footer End-->
 
@@ -981,6 +964,11 @@
    <script>
       $(document).ready(function(){
          $('#nav').load("components/navbar.html");
+      });
+   </script>
+   <script>
+      $(document).ready(function(){
+         $('footer').load("components/footer.html");
       });
    </script>
       

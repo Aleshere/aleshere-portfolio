@@ -36,7 +36,7 @@ body {
 
 header {
   position: relative;
-  height: 800px;
+  height: 100vh;
   min-height: 500px;
   width: 100%;
   background: var(--mainBackground) url(../images/header-background.jpg)
@@ -94,6 +94,10 @@ header .banner-text hr {
   margin: 18px auto 24px auto;
   border-color: var(--mainBackground);
   border-color: rgba(150, 150, 150, 0.1);
+}
+
+.formSubBanner {
+  margin-top: 180px !important;
 }
 
 /* header flying birds */
@@ -1100,22 +1104,22 @@ cite {
   font-size: 13px;
 }
 
-/* Twitter Feed */
-#twitter {
-  margin-top: 12px;
-  padding: 0;
+/* ------------------------------------------------------------------ */
+/* i. Terms Page
+/* ------------------------------------------------------------------ */
+#terms {
+  background: var(--greyish);
+  padding-top: 96px;
+  overflow: hidden;
 }
-#twitter li {
-  margin: 6px 0px 12px 0;
-  line-height: 30px;
+
+#terms .row .columns p {
+  color: var(--formBackground);
+  margin-bottom: 0;
 }
-#twitter li span {
-  display: block;
-}
-#twitter li b a {
-  font: 13px/36px 'opensans-regular', Sans-serif;
-  color: var(--formBackground) !important;
-  border: none;
+
+#terms .row .columns p:last-child {
+  margin-bottom: 30px;
 }
 
 /* ------------------------------------------------------------------ */
@@ -1147,14 +1151,16 @@ footer a:focus {
 /* copyright */
 footer .copyright {
   margin: 0;
-  margin-top: 5rem;
   padding: 0;
 }
+footer .copyright:last-of-type li {
+  margin-top: 15px;
+}
+
 footer .copyright li {
   display: inline-block;
-  margin: 0;
+  margin: 5px;
   padding: 0;
-  /* line-height: 34px; */
   color: var(--reddish);
   -webkit-user-select: none;
   -moz-user-select: none;
