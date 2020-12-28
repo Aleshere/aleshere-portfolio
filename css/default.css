@@ -312,7 +312,7 @@ blockquote p {
   line-height: 36px;
 }
 
-/*  2.3 Utilities
+/*  2.3 Gap utilities
 --------------------------------------------------------------------- */
 .ab-gap,
 .ab-gap-1,
@@ -341,6 +341,81 @@ blockquote p {
 }
 .ab-gap-6 {
   height: 120px;
+}
+
+/*  2.3 Padding utilities
+--------------------------------------------------------------------- */
+.p-0 {
+  padding: 0 !important;
+}
+.p-1 {
+  padding: 1px !important;
+}
+.p-2 {
+  padding: 2px !important;
+}
+.p-3 {
+  padding: 3px !important;
+}
+.p-4 {
+  padding: 4px !important;
+}
+.p-5 {
+  padding: 5px !important;
+}
+.p-6 {
+  padding: 6px !important;
+}
+.p-7 {
+  padding: 7px !important;
+}
+.p-8 {
+  padding: 8px !important;
+}
+.p-9 {
+  padding: 9px !important;
+}
+.p-10 {
+  padding: 10px !important;
+}
+.p-15 {
+  padding: 15px !important;
+}
+.p-20 {
+  padding: 20px !important;
+}
+.p-25 {
+  padding: 25px !important;
+}
+.p-30 {
+  padding: 30px !important;
+}
+.p-35 {
+  padding: 35px !important;
+}
+.p-40 {
+  padding: 40px !important;
+}
+.p-45 {
+  padding: 45px !important;
+}
+.p-50 {
+  padding: 50px !important;
+}
+.p-60 {
+  padding: 60px !important;
+}
+.p-70 {
+  padding: 70px !important;
+}
+.p-80 {
+  padding: 80px !important;
+}
+.p-90 {
+  padding: 90px !important;
+}
+.p-100 {
+  padding: 100px !important;
 }
 
 /*  3. Links  ------------------------------------------------------- */
