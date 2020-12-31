@@ -153,7 +153,9 @@ q:after {
   --mainBackground: #0f0f0f;
   --mainWhite: #fff;
   --reddish: #c77f7b;
+  --nightBlue: #27455d;
   --greyish: #ebeeee;
+  --formBackground: #373233;
 }
 
 html {
@@ -416,6 +418,21 @@ blockquote p {
 }
 .p-100 {
   padding: 100px !important;
+}
+
+/*  2.5 Color utilities
+--------------------------------------------------------------------- */
+.reddish {
+  color: var(--reddish) !important;
+}
+.greyish {
+  color: var(--greyish) !important;
+}
+.nightBlue {
+  color: var(--nightBlue) !important;
+}
+.formBkg {
+  color: var(--formBackground) !important;
 }
 
 /*  3. Links  ------------------------------------------------------- */
