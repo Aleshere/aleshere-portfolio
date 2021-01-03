@@ -4,12 +4,135 @@ header {
 }
 
 /* ------------------------------------------------------------------ */
-/* e. Portfolio Section
+/* a. Title
+/* ------------------------------------------------------------------ */
+#title {
+  background: var(--greyish);
+  overflow: hidden;
+}
+
+/* ------------------------------------------------------------------ */
+/* b. List Services Section
+/* ------------------------------------------------------------------ */
+
+#list-options {
+  background: var(--greyish);
+  /* padding-top: 14px; */
+  overflow: hidden;
+}
+
+#list-options p {
+  padding: 14px;
+  margin: 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* c. Web Services Section
+/* ------------------------------------------------------------------ */
+
+#web-services {
+  background: var(--greyish);
+  overflow: hidden;
+}
+
+#web-services a,
+#web-services a:visited {
+  color: var(--reddish);
+}
+#web-services a:hover,
+#web-services a:focus {
+  color: var(--nightBlue);
+}
+
+#web-services h1 {
+  font: 35px/30px 'opensans-bold', sans-serif;
+  color: var(--nightBlue);
+  margin-bottom: 42px;
+}
+#web-services h2 {
+  font: 30px/28px 'opensans-bold', sans-serif;
+  color: var(--nightBlue);
+  margin-bottom: 42px;
+}
+#web-services h3 {
+  font: 18px/30px 'opensans-bold', sans-serif;
+  color: var(--nightBlue);
+  margin-bottom: 12px;
+}
+#web-services p {
+  font-size: 20px;
+  line-height: 40px;
+  color: var(--nightBlue);
+  margin: 0 !important;
+}
+#web-services .profile-pic {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+}
+#web-services .contact-details {
+  width: 41.66667%;
+}
+#web-services .download {
+  width: 58.33333%;
+  padding-top: 6px;
+}
+#web-services .main-col {
+  padding-right: 5%;
+}
+#web-services .download .button {
+  margin-top: 6px;
+  color: var(--mainWhite);
+  background: var(--reddish);
+  padding: 5px 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+#web-services .download .button:hover {
+  color: var(--reddish);
+  background: var(--mainWhite);
+}
+#web-services .download .button i {
+  margin-right: 15px;
+  font-size: 20px;
+}
+.offer {
+  margin-top: 0 !important;
+}
+.offer li {
+  color: var(--nightBlue);
+}
+.offer ol {
+  margin-top: 24px;
+}
+#web-services label span {
+  color: var(--nightBlue);
+}
+#web-services input {
+  min-width: 100%;
+  transition: all 0.3s;
+}
+#web-services input:focus,
+#web-services input:active {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: var(--nightBlue);
+}
+#web-services span {
+  padding-bottom: 10px;
+  display: inline-block;
+}
+.paddingBottom {
+  padding-bottom: 66px;
+}
+
+/* ------------------------------------------------------------------ */
+/* d. Portfolio Section
 /* ------------------------------------------------------------------ */
 
 #portfolio {
   background: var(--greyish);
-  padding-top: 90px;
   padding-bottom: 60px;
 }
 #portfolio h1 {
@@ -19,6 +142,11 @@ header {
   text-align: center;
   margin-bottom: 48px;
   color: var(--nightBlue);
+}
+#portfolio h2 {
+  font: 30px/28px 'opensans-bold', sans-serif;
+  color: var(--nightBlue);
+  margin-bottom: 42px;
 }
 
 /* Portfolio Content */

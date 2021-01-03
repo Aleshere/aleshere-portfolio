@@ -1,0 +1,138 @@
+header {
+  height: 0 !important;
+  min-height: 50px !important;
+}
+
+/* ------------------------------------------------------------------ */
+/* a. Title
+/* ------------------------------------------------------------------ */
+
+#title {
+  background: var(--greyish);
+  overflow: hidden;
+}
+
+/* ------------------------------------------------------------------ */
+/* b. List Services Section
+/* ------------------------------------------------------------------ */
+
+#list-options {
+  background: var(--greyish);
+  /* padding-top: 14px; */
+  overflow: hidden;
+}
+
+#list-options p {
+  padding: 14px;
+  margin: 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* c. List Services Section
+/* ------------------------------------------------------------------ */
+
+#list-services {
+  background: var(--greyish);
+  overflow: hidden;
+}
+
+#list-services a,
+#list-services a:visited {
+  color: var(--nightBlue);
+}
+#list-services a:hover,
+#list-services a:focus {
+  color: var(--reddish);
+}
+
+.linksInverted a,
+.linksInverted a:visited {
+  color: var(--reddish) !important;
+}
+.linksInverted a:hover,
+.linksInverted a:focus {
+  color: var(--nightBlue) !important;
+}
+
+#list-services h1 {
+  font: 35px/30px 'opensans-bold', sans-serif;
+  color: var(--nightBlue);
+  margin-bottom: 42px;
+}
+#list-services h2 {
+  font: 30px/28px 'opensans-bold', sans-serif;
+  color: var(--nightBlue);
+  margin-bottom: 42px;
+}
+#list-services h3 {
+  font: 18px/30px 'opensans-bold', sans-serif;
+  color: var(--nightBlue);
+  margin-bottom: 12px;
+}
+#list-services p {
+  font-size: 20px;
+  line-height: 40px;
+  color: var(--nightBlue);
+  margin: 0 !important;
+}
+#list-services .profile-pic {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+}
+#list-services .contact-details {
+  width: 41.66667%;
+}
+#list-services .download {
+  width: 58.33333%;
+  padding-top: 6px;
+}
+#list-services .main-col {
+  padding-right: 5%;
+}
+#list-services .download .button {
+  margin-top: 6px;
+  color: var(--mainWhite);
+  background: var(--reddish);
+  padding: 5px 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+#list-services .download .button:hover {
+  color: var(--reddish);
+  background: var(--mainWhite);
+}
+#list-services .download .button i {
+  margin-right: 15px;
+  font-size: 20px;
+}
+.offer {
+  margin-top: 0 !important;
+}
+.offer li {
+  color: var(--nightBlue);
+}
+.offer ol {
+  margin-top: 24px;
+}
+#list-services label span {
+  color: var(--nightBlue);
+}
+#list-services input {
+  min-width: 100%;
+  transition: all 0.3s;
+}
+#list-services input:focus,
+#list-services input:active {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: var(--nightBlue);
+}
+#list-services span {
+  padding-bottom: 10px;
+  display: inline-block;
+}
+.paddingBottom {
+  padding-bottom: 66px;
+}

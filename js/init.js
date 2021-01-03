@@ -20,7 +20,7 @@ jQuery(document).ready(function ($) {
   /* Smooth Scrolling
 ------------------------------------------------------ */
 
-  $('header').on('click', 'a', function (e) {
+  $('header').on('click', '.smoothScroll', function (e) {
     e.preventDefault();
 
     var target = this.hash,
