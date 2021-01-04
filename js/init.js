@@ -76,24 +76,46 @@ jQuery(document).ready(function ($) {
   });
 
   /*----------------------------------------------------*/
-  /*	Fade In/Out Primary Navigation
+  /*	Fade In/Out Primary Navigation Home
 ------------------------------------------------------*/
 
-  $(window).on('scroll', function () {
-    var h = $('header').height();
-    var y = $(window).scrollTop();
-    var nav = $('#nav-wrap');
+  if (top.location.pathname === '/') {
+    $(window).scroll(function () {
+      var top_of_element = $('#home').offset().top;
+      var bottom_of_element =
+        $('#home').offset().top + $('#home').outerHeight();
+      var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+      var top_of_screen = $(window).scrollTop();
 
-    if (y > h * 0.2 && y < h && $(window).outerWidth() > 768) {
-      nav.fadeOut('fast');
-    } else {
-      if (y < h * 0.2) {
-        nav.removeClass('opaque').fadeIn('fast');
+      if (
+        bottom_of_screen > top_of_element &&
+        top_of_screen < bottom_of_element
+      ) {
+        // the element is visible, do something
+        $(function () {
+          var nav = $('#nav-wrap');
+          nav.removeClass('nav-filled');
+          var scrollVal = $(window).scrollTop();
+          var docHeight = $(window).height();
+          var percentage = (scrollVal / docHeight) * 100;
+          if (percentage > 0 && percentage < 100) {
+            nav.removeClass('nav-transparent').addClass('nav-faded');
+          } else if (percentage >= 100) {
+            nav.removeClass('nav-faded').addClass('nav-filled');
+          } else {
+            nav.removeClass('nav-faded').addClass('nav-transparent');
+          }
+        });
       } else {
-        nav.addClass('opaque').fadeIn('fast');
+        // the element is not visible, do something else
+        var nav = $('#nav-wrap');
+        nav
+          .removeClass('nav-transparent')
+          .removeClass('nav-faded')
+          .addClass('nav-filled');
       }
-    }
-  });
+    });
+  }
 
   /*----------------------------------------------------*/
   /*	Modal Popup
