@@ -1,3 +1,6 @@
+.web-services #nav-web-services {
+  color: var(--reddish);
+}
 header {
   height: 0 !important;
   min-height: 50px !important;

@@ -1,3 +1,12 @@
+.design-row {
+  width: 96%;
+  max-width: none;
+}
+
+.design #nav-web-services {
+  color: var(--reddish);
+}
+
 header {
   height: 0 !important;
   min-height: 50px !important;
@@ -15,6 +24,32 @@ header {
 /* ------------------------------------------------------------------ */
 /* b. List Options Section
 /* ------------------------------------------------------------------ */
+.quick-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.is-pinned {
+  position: fixed;
+  text-align: left;
+  top: 30%;
+}
+
+.is-pinned .bold {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.is-pinned p {
+  line-height: 24px !important;
+  margin: 0 auto;
+}
+
+.is-pinned a {
+  font-size: 14px;
+}
 
 #list-options {
   background: var(--greyish);
@@ -69,11 +104,11 @@ header {
   color: var(--nightBlue);
   margin-bottom: 12px;
 }
-#design p {
+#design .eight p {
   font-size: 20px;
   line-height: 40px;
   color: var(--nightBlue);
-  margin: 0 !important;
+  /* margin: 0 !important; */
 }
 #design .profile-pic {
   position: relative;

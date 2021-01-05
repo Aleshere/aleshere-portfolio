@@ -204,6 +204,10 @@ ul#nav li {
 }
 
 /* Links */
+.main #nav-homepage {
+  color: var(--reddish);
+}
+
 ul#nav li a {
   /* 8px padding top + 8px padding bottom + 32px line-height = 48px */
 
@@ -247,10 +251,6 @@ ul#nav li a:hover:after {
   -webkit-animation: fill 0.5s forwards;
   -moz-animation: fill 0.5s forwards;
   /* opacity: 1; */
-}
-ul#nav li.current a {
-  color: var(--reddish);
-  border-radius: 2px;
 }
 
 /* Keyframes */

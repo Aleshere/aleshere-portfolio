@@ -7,7 +7,7 @@
 jQuery(document).ready(function ($) {
   /*----------------------------------------------------*/
   /* FitText Settings
------------------------------------------------------- */
+  ------------------------------------------------------ */
 
   setTimeout(function () {
     $('h1.responsive-headline').fitText(1, {
@@ -18,7 +18,7 @@ jQuery(document).ready(function ($) {
 
   /*----------------------------------------------------*/
   /* Smooth Scrolling
------------------------------------------------------- */
+  ------------------------------------------------------ */
 
   $('header').on('click', '.smoothScroll', function (e) {
     e.preventDefault();
@@ -42,32 +42,41 @@ jQuery(document).ready(function ($) {
 
   /*----------------------------------------------------*/
   /* Highlight the current section in the navigation bar
-------------------------------------------------------*/
+  ------------------------------------------------------*/
 
-  const sections = $('section');
+  // $('li').on('load', 'a', function () {
+  //   // do something
+  //   const navigation_links = $('#nav-wrap a');
+  //   console.log(navigation_links);
+  //   let active_page = top.location.pathname;
 
-  sections.waypoint({
-    handler: function (event, direction) {
-      let active_section;
-      const navigation_links = $('#nav-wrap a');
+  //   $(navigation_links).each(function () {
+  //     console.log(active_page);
+  //     $(this).closest('li').addClass('current');
+  //   });
+  // });
 
-      active_section = $(this);
-      if (direction === 'up') active_section = active_section.prev();
+  // $('li').on('click', 'a', function () {
+  //   // do something
+  //   let active_page = $(location).attr('href');
+  //   const navigation_links = $('#nav-wrap a');
+  //   console.log(navigation_links);
+  //   n = file.lastIndexOf('/');
 
-      let active_link = $(
-        '#nav-wrap a[href="#' + active_section.attr('id') + '"]'
-      );
+  //   console.log(active_page);
 
-      navigation_links.parent().removeClass('current');
-      active_link.parent().addClass('current');
-    },
-    offset: '35%',
-  });
+  //   $(navigation_links).removeClass('current');
+  //   $(navigation_links).each(function () {
+  //     if (n >= 0) {
+  //       file = file.substring(n + 1);
+  //     }
+  //   });
+  // });
 
   /*----------------------------------------------------*/
   /*	Make sure that #header-background-image height is
-/* equal to the browser height.
------------------------------------------------------- */
+  /* equal to the browser height.
+  ------------------------------------------------------ */
 
   $('header').css({ height: $(window).height() });
   $(window).on('resize', function () {
@@ -77,7 +86,7 @@ jQuery(document).ready(function ($) {
 
   /*----------------------------------------------------*/
   /*	Fade In/Out Primary Navigation Home
-------------------------------------------------------*/
+  ------------------------------------------------------*/
 
   if (top.location.pathname === '/') {
     $(window).scroll(function () {
@@ -119,7 +128,7 @@ jQuery(document).ready(function ($) {
 
   /*----------------------------------------------------*/
   /*	Modal Popup
-------------------------------------------------------*/
+  ------------------------------------------------------*/
 
   $('.item-wrap a').magnificPopup({
     type: 'inline',
