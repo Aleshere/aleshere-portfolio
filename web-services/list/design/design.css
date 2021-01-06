@@ -21,6 +21,11 @@ header {
   overflow: hidden;
 }
 
+#title h1,
+#title h2 {
+  text-align: center;
+}
+
 /* ------------------------------------------------------------------ */
 /* b. List Options Section
 /* ------------------------------------------------------------------ */
@@ -29,6 +34,11 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#quick-links a:hover,
+#quick-links .smoothScroll.active {
+  color: var(--reddish);
 }
 
 .is-pinned {
@@ -49,17 +59,6 @@ header {
 
 .is-pinned a {
   font-size: 14px;
-}
-
-#list-options {
-  background: var(--greyish);
-  /* padding-top: 14px; */
-  overflow: hidden;
-}
-
-#list-options p {
-  padding: 14px;
-  margin: 0;
 }
 
 /* ------------------------------------------------------------------ */
@@ -95,7 +94,7 @@ header {
   margin-bottom: 42px;
 }
 #design h2 {
-  font: 30px/28px 'opensans-bold', sans-serif;
+  font: 24px/28px 'opensans-bold', sans-serif;
   color: var(--nightBlue);
   margin-bottom: 42px;
 }
@@ -105,7 +104,7 @@ header {
   margin-bottom: 12px;
 }
 #design .eight p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 40px;
   color: var(--nightBlue);
   /* margin: 0 !important; */
@@ -175,15 +174,26 @@ header {
 /* ------------------------------------------------------------------ */
 /* d. FAQs
 /* ------------------------------------------------------------------ */
+
 #faq {
   background: var(--greyish);
   overflow: hidden;
 }
+
+#faq .row {
+  max-width: none;
+}
+
 #faq h2 {
   font: 30px/28px 'opensans-bold', sans-serif;
   color: var(--nightBlue);
   margin-bottom: 42px;
 }
+
+#faq .row .eight {
+  padding: 0;
+}
+
 .faq-wrap {
   width: 100%;
   min-height: 40rem;
@@ -257,7 +267,11 @@ div.panel.show {
   max-height: 20rem;
   text-align: left !important;
 }
-/* Background of progress bar */
+
+/* ------------------------------------------------------------------ */
+/* e. BACKGROUND PROGRESS BAR
+/* ------------------------------------------------------------------ */
+
 .progress-bar-background {
   width: 100%;
   height: 5px;

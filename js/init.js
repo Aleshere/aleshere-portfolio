@@ -9,69 +9,12 @@ jQuery(document).ready(function ($) {
   /* FitText Settings
   ------------------------------------------------------ */
 
-  setTimeout(function () {
-    $('h1.responsive-headline').fitText(1, {
-      minFontSize: '20px',
-      maxFontSize: '90px',
-    });
-  }, 100);
-
-  /*----------------------------------------------------*/
-  /* Smooth Scrolling
-  ------------------------------------------------------ */
-
-  $('header').on('click', '.smoothScroll', function (e) {
-    e.preventDefault();
-
-    var target = this.hash,
-      $target = $(target);
-
-    $('html, body')
-      .stop()
-      .animate(
-        {
-          scrollTop: $target.offset().top,
-        },
-        800,
-        'swing',
-        function () {
-          window.location.hash = target;
-        }
-      );
-  });
-
-  /*----------------------------------------------------*/
-  /* Highlight the current section in the navigation bar
-  ------------------------------------------------------*/
-
-  // $('li').on('load', 'a', function () {
-  //   // do something
-  //   const navigation_links = $('#nav-wrap a');
-  //   console.log(navigation_links);
-  //   let active_page = top.location.pathname;
-
-  //   $(navigation_links).each(function () {
-  //     console.log(active_page);
-  //     $(this).closest('li').addClass('current');
+  // setTimeout(function () {
+  //   $('h1.responsive-headline').fitText(1, {
+  //     minFontSize: '20px',
+  //     maxFontSize: '90px',
   //   });
-  // });
-
-  // $('li').on('click', 'a', function () {
-  //   // do something
-  //   let active_page = $(location).attr('href');
-  //   const navigation_links = $('#nav-wrap a');
-  //   console.log(navigation_links);
-  //   n = file.lastIndexOf('/');
-
-  //   console.log(active_page);
-
-  //   $(navigation_links).removeClass('current');
-  //   $(navigation_links).each(function () {
-  //     if (n >= 0) {
-  //       file = file.substring(n + 1);
-  //     }
-  //   });
-  // });
+  // }, 100);
 
   /*----------------------------------------------------*/
   /*	Make sure that #header-background-image height is
