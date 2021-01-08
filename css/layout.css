@@ -203,6 +203,44 @@ ul#nav li {
   display: inline-block;
 }
 
+/* Nav Dropdown */
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  display: none;
+  transition: all 2s ease !important;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  /* z-index: 999; */
+  background-color: var(--greyish);
+  width: 150%;
+  height: auto !important;
+  text-align: left;
+}
+
+ul li ul li:first-child {
+  padding-top: 12px !important;
+}
+
+ul li ul li a {
+  color: var(--nightBlue) !important;
+}
+
+ul li ul li a:hover {
+  color: var(--reddish) !important;
+}
+
 /* Links */
 .main #nav-homepage {
   color: var(--reddish);

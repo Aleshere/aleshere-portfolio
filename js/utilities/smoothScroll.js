@@ -3,6 +3,7 @@ $('.quick-links').on('click', '.smoothScroll', function (e) {
 
   var target = this.hash,
     $target = $(target);
+  console.log($target);
 
   $('html, body')
     .stop()
@@ -14,6 +15,7 @@ $('.quick-links').on('click', '.smoothScroll', function (e) {
       'swing',
       function () {
         window.location.hash = target;
+        console.log(window.location.hash);
       }
     );
 });

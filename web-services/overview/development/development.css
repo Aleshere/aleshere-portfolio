@@ -1,9 +1,9 @@
-.design-row {
+.development-row {
   width: 96%;
   max-width: none;
 }
 
-.design #nav-web-services {
+.development #nav-web-services {
   color: var(--reddish);
 }
 
@@ -62,20 +62,20 @@ header {
 }
 
 /* ------------------------------------------------------------------ */
-/* c. Design Section
+/* c. Development Section
 /* ------------------------------------------------------------------ */
 
-#design {
+#development {
   background: var(--greyish);
   overflow: hidden;
 }
 
-#design a,
-#design a:visited {
+#development a,
+#development a:visited {
   color: var(--nightBlue);
 }
-#design a:hover,
-#design a:focus {
+#development a:hover,
+#development a:focus {
   color: var(--reddish);
 }
 
@@ -88,87 +88,29 @@ header {
   color: var(--nightBlue) !important;
 }
 
-#design h1 {
+#development h1 {
   font: 35px/30px 'opensans-bold', sans-serif;
   color: var(--nightBlue);
   margin-bottom: 42px;
 }
-#design h2 {
+#development h2 {
   font: 24px/28px 'opensans-bold', sans-serif;
   color: var(--nightBlue);
   margin-bottom: 42px;
 }
-#design h3 {
+#development h3 {
   font: 18px/30px 'opensans-bold', sans-serif;
   color: var(--nightBlue);
   margin-bottom: 12px;
 }
-#design .eight p {
+#development .eight p {
   font-size: 18px;
   line-height: 40px;
   color: var(--nightBlue);
-  /* margin: 0 !important; */
 }
-#design .profile-pic {
-  position: relative;
-  width: 120px;
-  height: 120px;
-  border-radius: 100%;
-}
-#design .contact-details {
-  width: 41.66667%;
-}
-#design .download {
-  width: 58.33333%;
-  padding-top: 6px;
-}
-#design .main-col {
-  padding-right: 5%;
-}
-#design .download .button {
-  margin-top: 6px;
-  color: var(--mainWhite);
-  background: var(--reddish);
-  padding: 5px 18px;
-  border: none;
-  cursor: pointer;
-  border-radius: 3px;
-}
-#design .download .button:hover {
-  color: var(--reddish);
-  background: var(--mainWhite);
-}
-#design .download .button i {
-  margin-right: 15px;
-  font-size: 20px;
-}
-.offer {
-  margin-top: 0 !important;
-}
-.offer li {
-  color: var(--nightBlue);
-}
-.offer ol {
-  margin-top: 24px;
-}
-#design label span {
-  color: var(--nightBlue);
-}
-#design input {
-  min-width: 100%;
-  transition: all 0.3s;
-}
-#design input:focus,
-#design input:active {
-  background-color: rgba(255, 255, 255, 0.7);
-  color: var(--nightBlue);
-}
-#design span {
+#development span {
   padding-bottom: 10px;
   display: inline-block;
-}
-.paddingBottom {
-  padding-bottom: 66px;
 }
 
 /* ------------------------------------------------------------------ */
