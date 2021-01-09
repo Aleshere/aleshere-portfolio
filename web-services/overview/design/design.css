@@ -114,7 +114,105 @@ header {
 }
 
 /* ------------------------------------------------------------------ */
-/* d. FAQs
+/* d. Counters
+/* ------------------------------------------------------------------ */
+
+.counter {
+  color: var(--mainWhite);
+  text-align: center;
+  width: 120px;
+  height: auto;
+  margin: 40px;
+  padding: 33px 25px 20px;
+  position: relative;
+  z-index: 1;
+}
+.counter:before,
+.counter:after {
+  content: '';
+  background: linear-gradient(
+    -45deg,
+    #22a6b3 33%,
+    #68c1c9 29%,
+    #68c1c9 63%,
+    #7ed6df 0%
+  );
+  height: 200px;
+  width: 200px;
+  border: 4px solid var(--mainWhite);
+  border-radius: 50%;
+  transform: translateX(-50%) rotate(0);
+  position: absolute;
+  left: 50%;
+  top: 0;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+.counter:hover:before {
+  transform: translateX(-50%) rotate(360deg);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.counter .counter-icon {
+  font-size: 30px;
+}
+.counter .counter-value {
+  font-size: 30px;
+  font-weight: 700;
+  /* margin: 0 0 3px; */
+  display: block;
+}
+.counter h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.counter.magenta:before {
+  background: linear-gradient(
+    -45deg,
+    #c641c0 33%,
+    #db4ed4 29%,
+    #db4ed4 63%,
+    #dd7ed9 0%
+  );
+}
+.counter.magenta:after {
+  background: #c641c0;
+}
+.counter.green:before {
+  background: linear-gradient(
+    -45deg,
+    #6eaa40 33%,
+    #8abc62 29%,
+    #8abc62 63%,
+    #acd18e 0%
+  );
+}
+.counter.green:after {
+  background: #6eaa40;
+}
+.counter.orange:before {
+  background: linear-gradient(
+    -45deg,
+    #e8742c 33%,
+    #ef8b51 29%,
+    #ef8b51 63%,
+    #efac86 0%
+  );
+}
+.counter.orange:after {
+  background: #e8742c;
+}
+#counter-last-child {
+  float: left;
+}
+@media screen and (max-width: 990px) {
+  .counter {
+    margin-bottom: 40px;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* e. FAQs
 /* ------------------------------------------------------------------ */
 
 #faq {
@@ -152,7 +250,6 @@ dl {
 p.accordion {
   width: 100%;
   position: relative;
-  background-color: var(--mainWhite);
   color: var(--nightBlue);
   padding: 5px 16px;
   font-size: 20px;
