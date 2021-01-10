@@ -1,18 +1,29 @@
-$(document).ready(function () {
-  $('.counter-value').each(function () {
-    $(this)
-      .prop('Counter', 0)
-      .animate(
+$('.counters-container').waypoint(
+  function () {
+    $('.circle').each(function () {
+      var $this = $(this),
+        countTo = $this.attr('data-count');
+
+      $({ countNum: $this.text() }).animate(
         {
-          Counter: $(this).text(),
+          countNum: countTo,
         },
+
         {
-          duration: 3500,
-          easing: 'swing',
-          step: function (now) {
-            $(this).text(Math.ceil(now));
+          duration: 1000,
+          easing: 'linear',
+          step: function () {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function () {
+            $this.text(this.countNum + '%');
           },
         }
       );
-  });
-});
+    });
+  },
+  {
+    triggerOnce: true,
+    offset: '40%',
+  }
+);
