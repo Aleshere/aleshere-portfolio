@@ -123,6 +123,7 @@ header {
 .counters-container .card {
   flex: 1;
   margin: 10px;
+  background: var(--mainWhite);
   text-align: center;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
   border-radius: 20px;
@@ -131,7 +132,8 @@ header {
 .counters-container .card .title {
   padding-bottom: 40px;
 }
-.counters-container .card .circle {
+.counters-container .card .circle-percent,
+.counters-container .card .circle-int {
   box-sizing: border-box;
   font-size: 35px;
   font-weight: bold;
@@ -146,32 +148,27 @@ header {
   margin: -60px auto 0px auto;
   z-index: 2;
   position: relative;
-  box-shadow: inset 0px -10px 8px -8px rgba(0, 0, 0, 0.5);
 }
 .counters-container .card .content {
   padding: 15px;
-  padding-top: 45px;
+  padding-top: 65px;
   margin-top: -45px;
   background-color: var(--mainWhite);
   box-shadow: 0px -4px 5px rgba(0, 0, 0, 0.15);
 }
-.counters-container .card .icon {
-  font-size: 50px;
+.content p {
+  margin: 0;
+  font-size: 20px !important;
 }
-
 .counters-container .card:nth-child(1) .title,
-.counters-container .card:nth-child(1) .circle {
-  background-color: #e34f26;
-}
-.counters-container .card:nth-child(1) .icon {
-  color: #e34f26;
+.counters-container .card:nth-child(1) .circle-percent,
+.counters-container .card:nth-child(1) .circle-int {
+  background-color: var(--nightBlue);
 }
 .counters-container .card:nth-child(2) .title,
-.counters-container .card:nth-child(2) .circle {
+.counters-container .card:nth-child(2) .circle-percent,
+.counters-container .card:nth-child(2) .circle-int {
   background-color: #1b73ba;
-}
-.counters-container .card:nth-child(2) .icon {
-  color: #1b73ba;
 }
 
 @media (max-width: 767px) {
@@ -186,17 +183,28 @@ header {
 /* ------------------------------------------------------------------ */
 /* e. Plans We Offer
 /* ------------------------------------------------------------------ */
+.question-container {
+  display: flex;
+  margin-right: 20px;
+}
+.question-container img {
+  width: 86px;
+}
+
+/* ------------------------------------------------------------------ */
+/* f. Plans We Offer
+/* ------------------------------------------------------------------ */
 
 .flip-card-container {
   --hue: 150;
   --primary: hsl(var(--hue), 50%, 50%);
   --white-1: hsl(0, 0%, 90%);
   --white-2: hsl(0, 0%, 80%);
-  --dark: hsl(var(--hue), 25%, 10%);
+  --dark: hsl(var(--hue), 40%, 30%);
   --grey: hsl(0, 0%, 50%);
 
-  width: 310px;
-  height: 500px;
+  width: 300px;
+  height: 450px;
   margin: 16px;
 
   perspective: 1000px;
@@ -292,6 +300,7 @@ header {
 
   color: var(--white-1);
   background: hsla(var(--hue), 25%, 10%, 0.5);
+  border: 1px solid hsla(var(--hue), 45%, 40%, 0.8);
 }
 
 /* .img-bg */
@@ -318,7 +327,7 @@ header {
   transition: 0.1s;
 }
 .card-back .img-bg {
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 60%);
+  clip-path: polygon(0 20%, 100% 40%, 100% 100%, 0 100%);
 }
 
 /* hover state */
@@ -355,9 +364,6 @@ header {
 
   position: relative;
 }
-#plans li:nth-child(2n) {
-  color: var(--white-2);
-}
 #plans li:not(:last-child)::after {
   content: '';
 
@@ -372,6 +378,30 @@ header {
   opacity: 0.2;
 }
 
+/* Price tags */
+.card-back .price-tag {
+  display: block;
+
+  width: auto;
+  margin-top: 12%;
+  padding: 8px;
+
+  font-weight: bold;
+  line-height: 1.6;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  text-align: right;
+
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translate(50%);
+
+  color: var(--white-1);
+  background: hsla(var(--hue), 25%, 10%, 0.5);
+  border: 1px solid hsla(var(--hue), 45%, 40%, 0.8);
+}
+
 /* button */
 #plans button {
   font-family: inherit;
@@ -380,6 +410,7 @@ header {
 
   letter-spacing: 2px;
 
+  margin-bottom: 0;
   padding: 9px 20px;
   border: 1px solid var(--grey);
   border-radius: 1000px;
@@ -390,9 +421,9 @@ header {
 }
 #plans button:hover,
 #plans button:focus {
-  color: var(--primary);
-  background: hsla(var(--hue), 25%, 10%, 0.2);
-  border-color: currentColor;
+  color: var(--reddish);
+  background: hsla(var(--hue), 25%, 10%, 0.8);
+  border-color: var(--primary);
 }
 #plans button:active {
   transform: translate(2px);
@@ -421,7 +452,7 @@ header {
 .lines {
   display: block;
 
-  background: var(--grey);
+  background: var(--mainWhite);
   position: absolute;
 
   opacity: var(--op);
@@ -500,15 +531,15 @@ header {
 }
 
 /* states */
-#plans button:hover + .lines-container,
-#plans button:active + .lines-container,
-#plans button:focus + .lines-container {
+#plans a:hover + .lines-container,
+#plans a:active + .lines-container,
+#plans a:focus + .lines-container {
   --tr: 20;
   --op: 0.7;
 }
 
 /* ------------------------------------------------------------------ */
-/* f. FAQs
+/* g. FAQs
 /* ------------------------------------------------------------------ */
 
 #faq {
