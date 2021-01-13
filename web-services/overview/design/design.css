@@ -58,7 +58,7 @@ header {
 }
 
 .is-pinned a {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /* ------------------------------------------------------------------ */
@@ -624,7 +624,7 @@ div.panel {
   margin-top: 8px;
   margin-bottom: 12px;
   border-radius: 1rem;
-  font-size: 15px;
+  font-size: 18px;
   text-align: left !important;
 }
 
