@@ -6,13 +6,16 @@
         "contentful",
         "dropdown",
         "favicons",
+        "gmail",
+        "icann",
         "librebaskerville",
         "librebaskerville regular",
         "opensans",
         "opensans bold",
         "playsinline",
         "regular",
-        "scrolldown"
+        "scrolldown",
+        "whois"
     ],
     "liveServer.settings.port": 5501
 }

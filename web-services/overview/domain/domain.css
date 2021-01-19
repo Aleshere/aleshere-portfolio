@@ -1,9 +1,9 @@
-.design-row {
+.domain-row {
   width: 96%;
   max-width: none;
 }
 
-.design #nav-web-services {
+.domain #nav-web-services {
   color: var(--reddish);
 }
 
@@ -62,20 +62,20 @@ header {
 }
 
 /* ------------------------------------------------------------------ */
-/* c. Design Section
+/* c. Domain Section
 /* ------------------------------------------------------------------ */
 
-#design {
+#domain {
   background: var(--greyish);
   overflow: hidden;
 }
 
-#design a,
-#design a:visited {
+#domain a,
+#domain a:visited {
   color: var(--nightBlue);
 }
-#design a:hover,
-#design a:focus {
+#domain a:hover,
+#domain a:focus {
   color: var(--reddish);
 }
 
@@ -88,27 +88,27 @@ header {
   color: var(--nightBlue) !important;
 }
 
-#design h1 {
+#domain h1 {
   font: 35px/30px 'opensans-bold', sans-serif;
   color: var(--nightBlue);
   margin-bottom: 42px;
 }
-#design h2 {
+#domain h2 {
   font: 24px/28px 'opensans-bold', sans-serif;
   color: var(--nightBlue);
   margin-bottom: 42px;
 }
-#design h3 {
+#domain h3 {
   font: 18px/30px 'opensans-bold', sans-serif;
   color: var(--nightBlue);
   margin-bottom: 12px;
 }
-#design .eight p {
+#domain .eight p {
   font-size: 18px;
   line-height: 40px;
   color: var(--nightBlue);
 }
-#design span {
+#domain span {
   padding-bottom: 10px;
   display: inline-block;
 }
@@ -542,22 +542,22 @@ header {
 /* g. FAQs
 /* ------------------------------------------------------------------ */
 
-#design__faq {
+#domain__faq {
   background: var(--greyish);
   overflow: hidden;
 }
 
-#design__faq .row {
+#domain__faq .row {
   max-width: none;
 }
 
-#design__faq h2 {
+#domain__faq h2 {
   font: 30px/28px 'opensans-bold', sans-serif;
   color: var(--nightBlue);
   margin-bottom: 42px;
 }
 
-#design__faq .row .eight {
+#domain__faq .row .eight {
   padding: 0;
 }
 
@@ -630,7 +630,7 @@ div.panel {
 
 div.panel.show {
   opacity: 1;
-  max-height: 20rem;
+  max-height: 250px;
   text-align: left !important;
 }
 
