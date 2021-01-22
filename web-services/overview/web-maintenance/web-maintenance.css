@@ -1,9 +1,9 @@
-.domain-row {
+.maintenance-row {
   width: 96%;
   max-width: none;
 }
 
-.domain #nav-web-services {
+.maintenance #nav-web-services {
   color: var(--reddish);
 }
 
@@ -73,17 +73,17 @@ header {
 /* c. Domain Section
 /* ------------------------------------------------------------------ */
 
-#domain {
+#maintenance {
   background: var(--greyish);
   overflow: hidden;
 }
 
-#domain a,
-#domain a:visited {
+#maintenance a,
+#maintenance a:visited {
   color: var(--nightBlue);
 }
-#domain a:hover,
-#domain a:focus {
+#maintenance a:hover,
+#maintenance a:focus {
   color: var(--reddish);
 }
 
@@ -96,27 +96,27 @@ header {
   color: var(--nightBlue) !important;
 }
 
-#domain h1 {
+#maintenance h1 {
   font: 35px/30px 'opensans-bold', sans-serif;
   color: var(--nightBlue);
   margin-bottom: 42px;
 }
-#domain h2 {
+#maintenance h2 {
   font: 24px/28px 'opensans-bold', sans-serif;
   color: var(--nightBlue);
   margin-bottom: 42px;
 }
-#domain h3 {
+#maintenance h3 {
   font: 18px/30px 'opensans-bold', sans-serif;
   color: var(--nightBlue);
   margin-bottom: 12px;
 }
-#domain .eight p {
+#maintenance .eight p {
   font-size: 18px;
   line-height: 40px;
   color: var(--nightBlue);
 }
-#domain span {
+#maintenance span {
   padding-bottom: 10px;
   display: inline-block;
 }
@@ -550,22 +550,22 @@ header {
 /* g. FAQs
 /* ------------------------------------------------------------------ */
 
-#domain__faq {
+#maintenance__faq {
   background: var(--greyish);
   overflow: hidden;
 }
 
-#domain__faq .row {
+#maintenance__faq .row {
   max-width: none;
 }
 
-#domain__faq h2 {
+#maintenance__faq h2 {
   font: 30px/28px 'opensans-bold', sans-serif;
   color: var(--nightBlue);
   margin-bottom: 42px;
 }
 
-#domain__faq .row .eight {
+#maintenance__faq .row .eight {
   padding: 0;
 }
 

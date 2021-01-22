@@ -26,6 +26,14 @@ header {
   text-align: center;
 }
 
+#title .row {
+  max-width: none !important;
+}
+
+#title .flexCenter {
+  flex-direction: column;
+}
+
 /* ------------------------------------------------------------------ */
 /* b. List Options Section
 /* ------------------------------------------------------------------ */
@@ -578,7 +586,7 @@ p.accordion {
   width: 100%;
   position: relative;
   color: var(--nightBlue);
-  padding: 5px 16px;
+  padding: 5px 16px 5px 45px;
   font-size: 20px;
   text-align: left;
   border: none;
@@ -602,7 +610,7 @@ p.accordion::after {
   position: absolute;
   display: block;
   top: 50%;
-  right: 0;
+  left: 3%;
   transform: translate(-50%, -50%);
   color: transparent;
   text-shadow: 0 0 0 rgba(199, 127, 123, 0.85);
