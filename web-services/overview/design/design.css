@@ -168,15 +168,10 @@ header {
   margin: 0;
   font-size: 20px !important;
 }
-.counters-container .card:nth-child(1) .title,
-.counters-container .card:nth-child(1) .circle-percent,
-.counters-container .card:nth-child(1) .circle-int {
+.counters-container .card .title,
+.counters-container .card .circle-percent,
+.counters-container .card .circle-int {
   background-color: var(--nightBlue);
-}
-.counters-container .card:nth-child(2) .title,
-.counters-container .card:nth-child(2) .circle-percent,
-.counters-container .card:nth-child(2) .circle-int {
-  background-color: #1b73ba;
 }
 
 @media (max-width: 767px) {

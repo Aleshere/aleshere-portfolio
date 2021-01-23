@@ -131,7 +131,7 @@ header {
 .counters-container .card {
   flex: 1;
   margin: 10px;
-  background: var(--mainWhite);
+  background: var(--greyish);
   text-align: center;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
   border-radius: 20px;
@@ -145,11 +145,11 @@ header {
   box-sizing: border-box;
   font-size: 35px;
   font-weight: bold;
-  background-color: var(--nightBlue);
+  background-color: var(--greyish);
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  color: var(--mainWhite);
+  color: var(--greyish);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -161,22 +161,17 @@ header {
   padding: 15px;
   padding-top: 65px;
   margin-top: -45px;
-  background-color: var(--mainWhite);
-  box-shadow: 0px -4px 5px rgba(0, 0, 0, 0.15);
+  background-color: var(--greyish);
+  box-shadow: 10px -4px 15px rgba(0, 0, 0, 0.15);
 }
 .content p {
   margin: 0;
   font-size: 20px !important;
 }
-.counters-container .card:nth-child(1) .title,
-.counters-container .card:nth-child(1) .circle-percent,
-.counters-container .card:nth-child(1) .circle-int {
+.counters-container .card .title,
+.counters-container .card .circle-percent,
+.counters-container .card .circle-int {
   background-color: var(--nightBlue);
-}
-.counters-container .card:nth-child(2) .title,
-.counters-container .card:nth-child(2) .circle-percent,
-.counters-container .card:nth-child(2) .circle-int {
-  background-color: #1b73ba;
 }
 
 @media (max-width: 767px) {
