@@ -124,63 +124,78 @@ header {
 /* ------------------------------------------------------------------ */
 /* d. Counters
 /* ------------------------------------------------------------------ */
-
 .counters-container {
+  max-width: 1024px;
+  width: 100%;
+  padding: 0 4%;
+  margin: 0 auto;
   display: flex;
-}
-.counters-container .card {
-  flex: 1;
-  margin: 10px;
-  background: var(--mainWhite);
-  text-align: center;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-  border-radius: 20px;
-  overflow: hidden;
-}
-.counters-container .card .title {
-  padding-bottom: 40px;
-}
-.counters-container .card .circle-percent,
-.counters-container .card .circle-int {
-  box-sizing: border-box;
-  font-size: 35px;
-  font-weight: bold;
-  background-color: var(--nightBlue);
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  color: var(--mainWhite);
-  display: flex;
-  align-items: center;
   justify-content: center;
-  margin: -60px auto 0px auto;
-  z-index: 2;
+  align-items: center;
+}
+.counters__card {
+  width: 100%;
+  max-width: 300px;
+  min-width: 200px;
+  height: 225px;
+  background-color: var(--countersLightBlue);
+  margin: 10px;
+  padding-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+  font-size: 12px;
+  transition: all 0.3s ease;
   position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-.counters-container .card .content {
-  padding: 15px;
-  padding-top: 65px;
-  margin-top: -45px;
-  background-color: var(--mainWhite);
-  box-shadow: 0px -4px 5px rgba(0, 0, 0, 0.15);
+.counters__icon {
+  margin: 0 auto;
+  width: 100%;
+  height: 80px;
+  max-width: 80px;
+  background: var(--greyish);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--nightBlue);
+  transition: all 0.8s ease;
+  background-position: 0px;
+  background-size: 200px;
 }
-.content p {
-  margin: 0;
-  font-size: 20px !important;
+.counters__iconText {
+  font-size: 26px;
+  font-style: normal !important;
 }
-.counters-container .card .title,
-.counters-container .card .circle-percent,
-.counters-container .card .circle-int {
-  background-color: var(--nightBlue);
+.counters__card .counters__text {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  font-size: 13px !important;
+  line-height: 20px !important;
+  text-align: center;
+  font-weight: 200;
+  letter-spacing: 2px;
+  max-height: 0;
+  transition: all 0.3s ease;
 }
-
-@media (max-width: 767px) {
-  .counters-container {
-    flex-wrap: wrap;
-  }
-  .counters-container .card {
-    flex: 0 0 100%;
-  }
+.counters__card:hover {
+  height: 240px;
+  background: var(--countersHover);
+  transition: all 0.7s ease;
+}
+.counters__card:hover .counters__text {
+  transition: all 0.3s ease;
+}
+.counters__card:hover .counters__icon {
+  background: var(--countersHover);
+  transition: all 0.7s ease;
 }
 
 /* ------------------------------------------------------------------ */

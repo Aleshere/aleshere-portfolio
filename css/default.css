@@ -156,6 +156,8 @@ q:after {
   --nightBlue: #27455d;
   --greyish: #ebeeee;
   --formBackground: #373233;
+  --countersLightBlue: rgb(224, 231, 233);
+  --countersHover: whitesmoke;
 }
 
 html {
