@@ -15,7 +15,6 @@ $('.quick-links').on('click', '.smoothScroll', function (e) {
       'swing',
       function () {
         window.location.hash = target;
-        console.log(window.location.hash);
       }
     );
 });
