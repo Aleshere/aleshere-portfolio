@@ -1,0 +1,673 @@
+.audit-row {
+  width: 96%;
+  max-width: none;
+}
+
+.audit #nav-web-services {
+  color: var(--reddish);
+}
+
+header {
+  height: 0 !important;
+  min-height: 50px !important;
+}
+
+/* ------------------------------------------------------------------ */
+/* a. Title
+/* ------------------------------------------------------------------ */
+
+#title {
+  background: var(--greyish);
+  overflow: hidden;
+}
+
+#title h1,
+#title h2 {
+  text-align: center;
+}
+
+#title .row {
+  max-width: none !important;
+}
+
+#title .flexCenter {
+  flex-direction: column;
+}
+
+/* ------------------------------------------------------------------ */
+/* b. List Options Section
+/* ------------------------------------------------------------------ */
+.quick-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#quick-links a:hover,
+#quick-links .smoothScroll.active {
+  color: var(--reddish);
+}
+
+.is-pinned {
+  position: fixed;
+  text-align: left;
+  top: 30%;
+}
+
+.is-pinned .bold {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.is-pinned p {
+  line-height: 24px !important;
+  margin: 0 auto;
+}
+
+.is-pinned a {
+  font-size: 16px;
+}
+
+/* ------------------------------------------------------------------ */
+/* c. Design Section
+/* ------------------------------------------------------------------ */
+
+#seo__audit {
+  background: var(--greyish);
+  overflow: hidden;
+}
+
+#seo__audit a,
+#seo__audit a:visited {
+  color: var(--nightBlue);
+}
+#seo__audit a:hover,
+#seo__audit a:focus {
+  color: var(--reddish);
+}
+
+.linksInverted a,
+.linksInverted a:visited {
+  color: var(--reddish) !important;
+}
+.linksInverted a:hover,
+.linksInverted a:focus {
+  color: var(--nightBlue) !important;
+}
+
+#seo__audit h1 {
+  font: 35px/30px 'opensans-bold', sans-serif;
+  color: var(--nightBlue);
+  margin-bottom: 42px;
+}
+#seo__audit h2 {
+  font: 24px/28px 'opensans-bold', sans-serif;
+  color: var(--nightBlue);
+  margin-bottom: 42px;
+}
+#seo__audit h3 {
+  font: 18px/30px 'opensans-bold', sans-serif;
+  color: var(--nightBlue);
+  margin-bottom: 12px;
+}
+#seo__audit .eight p {
+  font-size: 18px;
+  line-height: 40px;
+  color: var(--nightBlue);
+}
+#seo__audit span {
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+/* ------------------------------------------------------------------ */
+/* d. Counters
+/* ------------------------------------------------------------------ */
+.counters-container {
+  max-width: 1024px;
+  width: 100%;
+  padding: 0 4%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.counters__card {
+  width: 100%;
+  max-width: 300px;
+  min-width: 200px;
+  height: 225px;
+  background-color: var(--countersLightBlue);
+  margin: 10px;
+  padding-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+  font-size: 12px;
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.counters__icon {
+  margin: 0 auto;
+  width: 100%;
+  height: 80px;
+  max-width: 80px;
+  background: var(--greyish);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--nightBlue);
+  transition: all 0.8s ease;
+  background-position: 0px;
+  background-size: 200px;
+}
+.counters__iconText {
+  font-size: 26px;
+  font-style: normal !important;
+}
+.counters__card .counters__text {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  font-size: 13px !important;
+  line-height: 20px !important;
+  text-align: center;
+  font-weight: 200;
+  letter-spacing: 2px;
+  max-height: 0;
+  transition: all 0.3s ease;
+}
+.counters__card:hover {
+  height: 240px;
+  background: var(--countersHover);
+  transition: all 0.7s ease;
+}
+.counters__card:hover .counters__text {
+  transition: all 0.3s ease;
+}
+.counters__card:hover .counters__icon {
+  background: var(--countersHover);
+  transition: all 0.7s ease;
+}
+
+/* ------------------------------------------------------------------ */
+/* e. Plans We Offer
+/* ------------------------------------------------------------------ */
+.question-container {
+  display: flex;
+  margin-right: 20px;
+}
+.question-container img {
+  width: 86px;
+}
+
+/* ------------------------------------------------------------------ */
+/* f. Plans We Offer
+/* ------------------------------------------------------------------ */
+
+.flip-card-container {
+  --hue: 150;
+  --primary: hsl(var(--hue), 50%, 50%);
+  --white-1: hsl(0, 0%, 90%);
+  --white-2: hsl(0, 0%, 80%);
+  --dark: hsl(var(--hue), 40%, 30%);
+  --grey: hsl(0, 0%, 50%);
+
+  width: 300px;
+  height: 450px;
+  margin: 16px;
+
+  perspective: 1000px;
+}
+
+/* .flip-card */
+.flip-card {
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 0.6s 0.1s;
+}
+
+/* hover and focus-within states */
+.flip-card-container:hover .flip-card,
+.flip-card-container:focus-within .flip-card {
+  transform: rotateY(180deg);
+}
+
+/* .card-... */
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+
+  background: var(--dark);
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+
+  backface-visibility: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .card-front */
+.card-front {
+  transform: rotateY(0deg);
+  z-index: 2;
+}
+
+/* .card-back */
+.card-back {
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+/* figure */
+#plans figure {
+  z-index: -1;
+}
+
+/* figure, .img-bg */
+#plans figure,
+.img-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+/* img */
+#plans img {
+  height: 100%;
+  border-radius: 24px;
+}
+
+/* figcaption */
+#plans figcaption {
+  display: block;
+
+  width: auto;
+  margin-top: 12%;
+  padding: 8px 22px;
+
+  font-weight: bold;
+  line-height: 1.6;
+  letter-spacing: 2px;
+  word-spacing: 6px;
+  text-align: right;
+
+  position: absolute;
+  top: 0;
+  right: 12px;
+
+  color: var(--white-1);
+  background: hsla(var(--hue), 25%, 10%, 0.5);
+  border: 1px solid hsla(var(--hue), 45%, 40%, 0.8);
+}
+
+/* .img-bg */
+.img-bg {
+  background: hsla(var(--hue), 25%, 10%, 0.5);
+}
+.card-front .img-bg {
+  clip-path: polygon(0 20%, 100% 40%, 100% 100%, 0 100%);
+}
+.card-front .img-bg::before {
+  content: '';
+
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(18deg);
+
+  width: 100%;
+  height: 6px;
+  border: 1px solid var(--primary);
+  border-left-color: transparent;
+  border-right-color: transparent;
+
+  transition: 0.1s;
+}
+.card-back .img-bg {
+  clip-path: polygon(0 20%, 100% 40%, 100% 100%, 0 100%);
+}
+
+/* hover state */
+.flip-card-container:hover .card-front .img-bg::before {
+  width: 6px;
+  border-left-color: var(--primary);
+  border-right-color: var(--primary);
+}
+
+/* ul */
+#plans ul {
+  padding-top: 50%;
+  margin: 0 auto;
+  width: 70%;
+  height: 100%;
+
+  list-style: none;
+  color: var(--white-1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* li */
+#plans li {
+  width: 100%;
+  margin-top: 12px;
+  padding-bottom: 12px;
+
+  font-size: 14px;
+  text-align: center;
+
+  position: relative;
+}
+#plans li:not(:last-child)::after {
+  content: '';
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 1px;
+
+  background: currentColor;
+  opacity: 0.2;
+}
+
+/* Price tags */
+.card-back .price-tag {
+  display: block;
+
+  width: auto;
+  margin-top: 12%;
+  padding: 8px;
+
+  font-weight: bold;
+  line-height: 1.6;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  text-align: right;
+
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translate(50%);
+
+  color: var(--white-1);
+  background: hsla(var(--hue), 25%, 10%, 0.5);
+  border: 1px solid hsla(var(--hue), 45%, 40%, 0.8);
+}
+
+/* button */
+#plans button {
+  font-family: inherit;
+  font-weight: bold;
+  color: var(--white-1);
+
+  letter-spacing: 2px;
+
+  margin-bottom: 0;
+  padding: 9px 20px;
+  border: 1px solid var(--grey);
+  border-radius: 1000px;
+  background: transparent;
+  transition: 0.3s;
+
+  cursor: pointer;
+}
+#plans button:hover,
+#plans button:focus {
+  color: var(--reddish);
+  background: hsla(var(--hue), 25%, 10%, 0.8);
+  border-color: var(--primary);
+}
+#plans button:active {
+  transform: translate(2px);
+}
+
+/* .lines-container */
+.lines-container {
+  --tr: 90;
+  --op: 0.5;
+
+  width: 100%;
+  height: 100%;
+
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  pointer-events: none;
+}
+.lines-container span {
+  padding-bottom: 0 !important;
+}
+
+/* .lines */
+.lines {
+  display: block;
+
+  background: var(--mainWhite);
+  position: absolute;
+
+  opacity: var(--op);
+  transition: 0.3s;
+}
+
+.lines--1,
+.lines--2,
+.lines--3,
+.lines--4 {
+  width: 1px;
+  height: 100%;
+}
+
+.lines--1,
+.lines--2 {
+  top: 0;
+  transform: translateY(calc((var(--tr) - (var(--tr) * 2)) * 1%));
+}
+
+.lines--1 {
+  left: 20%;
+}
+
+.lines--2 {
+  left: 80%;
+}
+
+.lines--3,
+.lines--4 {
+  bottom: 0;
+  transform: translateY(calc((var(--tr) + (var(--tr) - var(--tr))) * 1%));
+}
+
+.lines--3 {
+  left: 24%;
+}
+
+.lines--4 {
+  left: 76%;
+}
+.lines--5,
+.lines--6,
+.lines--7,
+.lines--8 {
+  width: 100%;
+  height: 1px;
+}
+
+.lines--5,
+.lines--6 {
+  left: 0;
+  transform: translateX(calc((var(--tr) - (var(--tr) * 2)) * 1%));
+}
+
+.lines--5 {
+  top: 41%;
+}
+
+.lines--6 {
+  top: 59%;
+}
+
+.lines--7,
+.lines--8 {
+  right: 0;
+  transform: translateX(calc((var(--tr) + (var(--tr) - var(--tr))) * 1%));
+}
+
+.lines--7 {
+  top: 44%;
+}
+
+.lines--8 {
+  top: 56%;
+}
+
+/* states */
+#plans a:hover + .lines-container,
+#plans a:active + .lines-container,
+#plans a:focus + .lines-container {
+  --tr: 20;
+  --op: 0.7;
+}
+
+/* ------------------------------------------------------------------ */
+/* g. FAQs
+/* ------------------------------------------------------------------ */
+
+#audit__faq {
+  background: var(--greyish);
+  overflow: hidden;
+}
+
+#audit__faq .row {
+  max-width: none;
+}
+
+#audit__faq h2 {
+  font: 30px/28px 'opensans-bold', sans-serif;
+  color: var(--nightBlue);
+  margin-bottom: 42px;
+}
+
+#audit__faq .row .eight {
+  padding: 0;
+}
+
+.faq-wrap {
+  width: 100%;
+  min-height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+dl {
+  width: 100%;
+  height: 100%;
+}
+
+p.accordion {
+  width: 100%;
+  position: relative;
+  color: var(--nightBlue);
+  padding: 5px 16px 5px 45px;
+  font-size: 20px;
+  text-align: left;
+  border: none;
+  margin-bottom: 0.1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+/* Add a background color to the accordion if it is clicked on (add .active class in JS), and when you move the mouse over it (hover) */
+p.accordion.active,
+p.accordion:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Unicode character for "plus" sign (+) */
+p.accordion::after {
+  content: '\2795';
+  font-size: 14px;
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 3%;
+  transform: translate(-50%, -50%);
+  color: transparent;
+  text-shadow: 0 0 0 rgba(199, 127, 123, 0.85);
+}
+
+/* Unicode character for "minus" sign (-) */
+p.accordion.active:after {
+  content: '\2796';
+}
+
+div.panel {
+  padding: 14px;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: var(--nightBlue);
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s ease-in-out;
+  opacity: 0;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  border-radius: 1rem;
+  font-size: 18px;
+  text-align: left !important;
+}
+
+div.panel.show {
+  opacity: 1;
+  max-height: 20rem;
+  text-align: left !important;
+}
+
+/* ------------------------------------------------------------------ */
+/* e. BACKGROUND PROGRESS BAR
+/* ------------------------------------------------------------------ */
+
+.progress-bar-background {
+  width: 100%;
+  height: 5px;
+  background: #ccc;
+  position: fixed;
+  top: 48px;
+  /* z-index: 998; */
+}
+
+/* The progress bar */
+.progress-bar {
+  height: 5px;
+  background: var(--reddish);
+  width: 0%;
+}
