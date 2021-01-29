@@ -114,7 +114,7 @@ header {
 #seo__services .eight p,
 .ol {
   font-size: 18px;
-  line-height: 40px;
+  line-height: 30px;
   color: var(--nightBlue);
 }
 .ol {
@@ -564,22 +564,22 @@ header {
 /* g. FAQs
 /* ------------------------------------------------------------------ */
 
-#seo-services__faq {
+#seo-services-faq {
   background: var(--greyish);
   overflow: hidden;
 }
 
-#seo-services__faq .row {
+#seo-services-faq .row {
   max-width: none;
 }
 
-#seo-services__faq h2 {
+#seo-services-faq h2 {
   font: 30px/28px 'opensans-bold', sans-serif;
   color: var(--nightBlue);
   margin-bottom: 42px;
 }
 
-#seo-services__faq .row .eight {
+#seo-services-faq .row .eight {
   padding: 0;
 }
 
