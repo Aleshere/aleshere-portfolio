@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+   
+
+   <!--- General
+   ================================================== -->
+   <meta charset="utf-8">
+   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+   <title>The Coding Lab | Contact Us</title>
+   
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="../images/favicon.png" >   
+   
+   <!-- Mobile Specific Metas
+   ================================================== -->
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <meta name="apple-mobile-web-app-capable" content="yes"/>
+   <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+   
+   
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta name="description" content="We build web sites, create websites for small business, provide affordable seo services, and much more. Entrepreneurs and SEO specialists.">
+   <meta name="keywords" content="websites build, build pc websites, websites build company, seo services small business, seo experts, seo consultants, affordable seo services, affordable seo company,  search engine optimization, web page rankings, create websites uk, create websites for business, create websites with blog, create websites small business, create websites qr code, web site design, web site design services"/>
+   
+   
+   <!-- Facebook Card Data -->
+    <meta property="og:title" content="The Coding Lab | Build Websites and Affordable SEO" />
+    <meta property="og:url" content="https://www.thecodinglab.it" />
+    <meta property="og:description" content="We build web sites, create websites for small business, provide affordable seo services, and much more. Entrepreneurs and SEO specialists." />
+    <meta property="og:site_name" content="The Coding Lab" />
+    <meta property="og:image" content="images/favicon.png" />
+   
+    
+    <!-- Twitter Card Data -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="The Coding Lab" />
+    <meta name="twitter:description" content="We build web sites, create websites for small business, provide affordable seo services, and much more. Entrepreneurs and SEO specialists." />
+    <meta name="twitter:image" content="images/favicon.png" />
+    
+   
+   <!-- CSS
+    ================================================== -->
+   <link rel="preload" as="style" href="../css/fontello/css/fontello.css">
+   <link rel="stylesheet" href="../css/default.css">
+   <link rel="stylesheet" href="contact.css">
+   <link rel="stylesheet" href="../css/media-queries.css">
+
+   <!-- Script
+   ================================================== -->
+   <script src="../js/modernizr.js"></script>
+
+</head>
+
+<body class="contact" >
+
+<!-- Header
+   ================================================== -->
+
+    <nav id="nav-wrap">
+    
+        <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+        <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+        <ul id="nav" class="nav">
+
+        <!-- Dynamically inject navbar with JQuery
+        ================================================== -->
+        
+        </ul>
+    
+    </nav>
+
+   
+   <!-- START: Back To Top Button -->
+    
+   <a class="top-link hide" href="" id="js-top">
+      <svg xmlns="https://www.w3.org/TR/SVG2/" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
+      <span class="screen-reader-text">Back to top</span>
+   </a>
+   
+   <!-- END: Back To Top Button -->
+
+   <section id="contact">
+
+         <div class="row section-head">
+
+            <div class="eight columns header-col">
+
+               <h1><span>How can we help you?</span></h1>
+               <div class="ab-gap-2"></div>
+               <p class="h4" >Use the form below to get in touch<p>
+               <p class="h6" >*It looks amazing because it is crafted using the neumorphism technique<p>
+               <div class="ab-gap-2"></div>
+            </div>
+
+         </div>
+
+
+         <div class="row">
+
+            <div class="eight columns">
+
+               <!-- form -->
+               <form netlify action="/submissionSuccess.html" method="POST" id="contactForm" name="contactForm" netlify-honeypot="bot-field">
+					<fieldset>
+
+                  <p class="u-visually-hidden">
+                     <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+                  </p>
+
+                  <div>
+						   <label for="contactName">Name <span class="required">*</span></label>
+						   <input type="text" value="" size="35" id="contactName" name="contactName" placeholder="John Doe">
+                  </div>
+
+                  <div>
+						   <label for="contactEmail">Email <span class="required">*</span></label>
+						   <input type="text" value="" size="35" id="contactEmail" name="contactEmail" placeholder="john@email.com">
+                  </div>
+
+                  <div>
+						   <label for="contactSubject">Subject</label>
+						   <input type="text" value="" size="35" id="contactSubject" name="contactSubject" placeholder="The subject of your message">
+                  </div>
+
+                  <div>
+                     <label for="contactMessage">Message <span class="required">*</span></label>
+                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage" placeholder="Add here your message" ></textarea>
+                  </div>
+
+                  <div>
+                     <button type="submit" class="submit">Submit</button>
+                  </div>
+
+					</fieldset>
+				   </form> <!-- Form End -->
+            </div>
+
+
+            <aside class="four columns footer-widgets">
+
+               <div class="widget widget_contact">
+
+					   <h4>Reach Out</h4>
+					   <p class="address">
+						   Alessio Burgio<br>
+						   <span>alessio@thecodinglab.it</span><br>
+					   </p>
+
+				   </div>
+
+            </aside>
+
+      </div>
+
+   </section> <!-- Contact Section End-->
+    
+        <!-- footer
+    ================================================== -->
+    <footer>
+
+        <!-- Dynamically inject footer with JQuery
+                ================================================== -->
+
+    </footer> <!-- Footer End-->
+   
+   <!-- JavaScript
+   ================================================== -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="../js/jquery-3.3.1.min.js"><\/script>')</script>
+   <script type="text/javascript" src="../js/jquery-migrate-3.3.2.min.js"></script>
+   <script>
+      $(document).ready(function(){
+         $('#nav').load("../components/navbar.html");
+      });
+   </script>
+   <script>
+      $(document).ready(function(){
+         $('footer').load("../components/footer.html");
+      });
+   </script>
+      
+   <script src="../js/waypoints.js"></script>
+   <script src="../js/init.js"></script>
+   <script src="../js/magnific-popup.js"></script>
+   <script async src="../js/slideshow.js"></script>
+   <script>
+      window.lazyLoadOptions = {
+         elements_selector: ".lazy"
+      };
+      </script>
+   <script async src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.0/dist/lazyload.min.js"></script>
+   <script src="../js/utilities/backToTopBtn.js"></script>
+
+</body>
+
+</html>
