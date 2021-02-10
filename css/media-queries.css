@@ -59,24 +59,6 @@
     padding-right: 5%;
   }
 
-  /* Testimonials Section
-   ------------------------------------------------------------------- */
-  #testimonials .header-col h1:before {
-    font-size: 66px;
-    line-height: 66px;
-  }
-  #testimonials blockquote p {
-    font-size: 22px;
-    line-height: 46px;
-  }
-
-  /* Call to Action Section
-   ------------------------------------------------------------------- */
-  #call-to-action .header-col h1:before {
-    font-size: 66px;
-    line-height: 66px;
-  }
-
   /* Contact Section
    ------------------------------------------------------------------- */
   #contact .section-head {
@@ -160,19 +142,26 @@
   #nav-wrap:target > ul#nav {
     display: block;
     padding: 30px 20px 48px 20px;
-    background: #1f2024;
+    background: var(--formBackground);
     margin: 0 30px;
     clear: both;
+    width: 60%;
   }
-
   ul#nav li {
     display: block;
     height: auto;
-    margin: 0 auto;
-    padding: 0 4%;
-    text-align: left;
-    border-bottom: 1px solid #2d2e34;
+    width: 100%;
+    margin: 0 8px;
+    padding: 6px 0;
+    text-align: center;
+    border-bottom: 1px solid var(--formBackground);
     border-bottom-style: dotted;
+    font-size: 18px;
+  }
+
+  #nav-wrap ul li ul {
+    position: static;
+    display: none;
   }
 
   ul#nav li a {
@@ -183,6 +172,12 @@
     margin: 12px 0;
     line-height: 16px; /* reset line-height from 48px */
     border: none;
+  }
+
+  /* Progress Reading Bar */
+
+  .progress-bar-background {
+    display: none;
   }
 
   /* Header Styles
@@ -231,6 +226,9 @@
   #about .main-col {
     padding-right: 30px;
   }
+  #about h1 span {
+    display: none;
+  }
 
   /* Resume Section
    --------------------------------------------------------------------- */
@@ -254,27 +252,6 @@
     width: 100%;
   }
 
-  /* Call To Action Section
-   /* ----------------------------------------------------------------- */
-  #call-to-action {
-    text-align: center;
-  }
-  #call-to-action h1 {
-    font: 16px/24px 'opensans-bold', sans-serif;
-    text-align: center;
-    margin-bottom: 30px;
-    text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
-  }
-  #call-to-action h1 span {
-    display: block;
-  }
-  #call-to-action .header-col h1:before {
-    content: none;
-  }
-  #call-to-action p {
-    font-size: 15px;
-  }
-
   /* Portfolio Section
    /* ----------------------------------------------------------------- */
   #portfolio-wrapper .columns {
@@ -284,35 +261,23 @@
     max-width: 85%;
   }
 
-  /* Testimonials Section
-   ----------------------------------------------------------------------- */
-  #testimonials .text-container {
-    text-align: center;
-  }
-  #testimonials h1 {
-    font: 16px/24px 'opensans-bold', sans-serif;
-    text-align: center;
-    margin-bottom: 30px;
-    text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
-  }
-  #testimonials h1 span {
-    display: block;
-  }
-  #testimonials .header-col h1:before {
-    content: none;
-  }
-  #testimonials blockquote {
-    padding-bottom: 24px;
-  }
-  #testimonials blockquote p {
-    font-size: 20px;
-    line-height: 42px;
-  }
-
   /* Control Nav */
   .flex-control-nav {
     text-align: center;
     margin-left: -30px;
+  }
+
+  /* Web Services and SEO sections */
+  .img-container {
+    text-align: center;
+  }
+  .img-container img {
+    width: 60%;
+    margin-bottom: 20px;
+  }
+
+  #list-services {
+    padding: 20px;
   }
 
   /* contact Section
@@ -324,10 +289,10 @@
     margin-bottom: 12px;
   }
   #contact .section-head h1 {
-    font: 16px/24px 'opensans-bold', sans-serif;
+    font: 28px/24px 'opensans-bold', sans-serif;
     text-align: center;
-    margin-bottom: 30px;
-    text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
+    margin-bottom: 0;
+    text-align: left;
   }
   #contact h1 span {
     display: block;
@@ -380,6 +345,15 @@
   footer .social-links li {
     margin-left: 18px;
   }
+  #quick-links {
+    display: none;
+  }
+
+  /* Web Services */
+  #workflow {
+    width: auto;
+    max-width: none;
+  }
 
   /* Go To Top Button */
   #go-top {
@@ -410,7 +384,7 @@
     padding-top: 24px;
   }
   header .banner-text h1 {
-    font: 20px/1.1em 'opensans-bold', sans-serif;
+    font: 48px/1.1em 'opensans-bold', sans-serif;
     margin: 0 auto 24px auto;
   }
   header .banner-text h3 {
@@ -424,6 +398,42 @@
   }
   header .social li {
     margin: 0 6px;
+  }
+  #quick-links {
+    display: none;
+  }
+
+  /* About */
+  #about h1 span {
+    display: none;
+  }
+
+  /* Landing page offer */
+  #offer {
+    padding-top: 30px;
+  }
+  #offer .flexRight {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  #offer .profile-pic {
+    width: 160px;
+    height: 160px;
+  }
+  #offer .home-hide {
+    display: none;
+  }
+
+  /* Web Services and SEO services*/
+  #workflow {
+    width: auto;
+    max-width: none;
+  }
+  #list-services {
+    padding: none;
+  }
+  .img-container {
+    text-align: center;
   }
 
   /* footer

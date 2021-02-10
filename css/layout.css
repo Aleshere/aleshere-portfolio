@@ -318,6 +318,11 @@ ul#nav li a:hover:after {
   }
 }
 
+#mob-nav-web-services,
+#mob-nav-seo {
+  display: none !important;
+}
+
 /* BACK TO TOP BUTTON STYLES */
 
 .top-link {

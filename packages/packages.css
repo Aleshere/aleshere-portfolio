@@ -155,9 +155,6 @@ ul#nav li a {
   -ms-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
 }
-ul#nav li a {
-  color: var(--mainWhite);
-}
 ul#nav li a:after {
   position: absolute;
   bottom: 0;
@@ -248,20 +245,23 @@ ul#nav li a:hover:after {
 /* ------------------------------------------------------------------ */
 /* c. Main Section
 /* ------------------------------------------------------------------ */
+#title {
+  text-align: center;
+}
 
 #carousel {
-  width: 60%;
-  height: 90vh;
+  width: 80%;
+  height: 110vh;
   background-color: var(--greyish);
   display: grid;
   justify-content: center;
   align-content: center;
-  margin: 80px auto;
+  margin: 50px auto;
   position: relative;
 }
 #buttons {
   position: absolute;
-  bottom: 5px;
+  bottom: 65px;
   left: 5px;
 }
 #carousel .cloud9-item,
@@ -287,12 +287,6 @@ ul#nav li a:hover:after {
   margin: 16px;
 
   perspective: 1000px;
-}
-
-@media (max-width: 768px) {
-  .flip-card {
-    transform: scale(0.7);
-  }
 }
 
 /* .flip-card */

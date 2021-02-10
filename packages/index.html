@@ -46,7 +46,7 @@
    <link rel="preload" as="style" href="../css/fontello/css/fontello.css">
    <link rel="stylesheet" href="../css/default.css">
    <link rel="stylesheet" href="packages.css">
-   <link rel="stylesheet" href="../css/media-queries.css">
+   <link rel="stylesheet" href="media-queries.css">
 
    <!-- Script
    ================================================== -->
@@ -82,6 +82,15 @@
    </a>
    
    <!-- END: Back To Top Button -->
+   
+   <section id="title">
+      <div class="ab-gap-4"></div>
+         <div>
+            <h1 class="reddish bold" >Bundled Packages</h1>
+            <h2 class="nightBlue h4" >These are just suggestions</h2>
+            <h3 class="nightBlue h4" >Contact us to discuss your specific requirements</h3>
+         </div>
+   </section>
 
    <div id="carousel">
       
@@ -421,17 +430,18 @@
             </div>
          </div>          
          
+         <div id="buttons">
+            <button class="left">
+               ←
+            </button>
+            <button class="right">
+               →
+            </button>
+         </div>
+
       </div> 
       
                
-      <div id="buttons">
-         <button class="left">
-            ←
-         </button>
-         <button class="right">
-            →
-         </button>
-      </div>
                
 
    </div> <!-- Main Section End-->
@@ -479,10 +489,8 @@
          buttonLeft: $("#buttons > .left"),
          buttonRight: $("#buttons > .right"),
          speed: 1,
-         autoPlay: 1,
          bringToFront: true,
-         mouseWheel: true,
-      });
+      })       
    </script>
    
 </body>
