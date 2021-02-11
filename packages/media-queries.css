@@ -15,16 +15,11 @@
   /* main section with carousel
    ------------------------------------------------------------------------ */
   #carousel {
-    width: 100%;
+    width: 80vw;
     margin: 0 auto;
   }
   .flip-card {
     transform: scale(0.8);
-  }
-  #buttons {
-    z-index: 200;
-    bottom: -15px;
-    left: 5px;
   }
 }
 
@@ -128,15 +123,8 @@
 
   /* main section with carousel
    ------------------------------------------------------------------------ */
-  #carousel {
-    width: 95%;
-    margin: 0 auto;
-  }
   .flip-card {
     transform: scale(0.6);
-  }
-  #buttons {
-    z-index: 200;
   }
   #buttons button {
     padding: 8px 12px;

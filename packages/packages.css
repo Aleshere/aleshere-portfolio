@@ -250,19 +250,24 @@ ul#nav li a:hover:after {
 }
 
 #carousel {
-  width: 80%;
+  width: 80vw;
   height: 110vh;
   background-color: var(--greyish);
-  display: grid;
+  /* display: grid;
   justify-content: center;
-  align-content: center;
+  align-content: center; */
   margin: 50px auto;
   position: relative;
 }
-#buttons {
+#buttons .left {
   position: absolute;
-  bottom: 65px;
-  left: 5px;
+  top: 80%;
+  left: 2%;
+}
+#buttons .right {
+  position: absolute;
+  top: 80%;
+  right: 2%;
 }
 #carousel .cloud9-item,
 #buttons button {
@@ -284,7 +289,7 @@ ul#nav li a:hover:after {
 
   width: 250px;
   height: 360px;
-  margin: 16px;
+  margin: 0 auto;
 
   perspective: 1000px;
 }
@@ -296,7 +301,6 @@ ul#nav li a:hover:after {
 
   position: relative;
   transform-style: preserve-3d;
-  /* transition: 0.6s 0.1s; */
   transition: all 0.8s ease-in-out;
 }
 
@@ -679,9 +683,11 @@ ul#nav li a:hover:after {
   left: 50%;
   width: 100%;
   max-width: 600px;
+  padding: 12px;
   margin-left: -50%;
   background-color: var(--mainWhite);
   box-shadow: 0 0 1.5em hsla(0, 0%, 0%, 0.35);
+  border-radius: 4px;
 }
 
 /* Modal Transition */
@@ -698,11 +704,12 @@ ul#nav li a:hover:after {
 
 .modal-header,
 .modal-content {
-  padding: 1em;
+  padding: 16px;
 }
 
 .modal-description {
-  color: var(--nightBlue);
+  color: grey;
+  font-family: cursive;
 }
 
 /* Modal Header */
@@ -710,16 +717,15 @@ ul#nav li a:hover:after {
   position: relative;
   background-color: var(--mainWhite);
   box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.06);
-  border-bottom: 1px solid #e8e8e8;
 }
 
 /* Modal Heading */
 .modal-heading {
-  font-size: 1.125em;
+  font-size: 20px;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: var(--nightBlue);
+  color: var(--reddish);
 }
 
 /* Modal Close Button */
@@ -734,8 +740,33 @@ ul#nav li a:hover:after {
 }
 
 .modal-close:hover {
-  color: black;
   background-color: whitesmoke;
+}
+
+.icon-close {
+  width: 14px;
+  height: 14px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-close div:nth-child(1) {
+  width: 2px;
+  height: 100%;
+  background-color: #9c9f9c;
+  position: absolute;
+  transform: rotate(45deg);
+  border-radius: 2px;
+}
+
+.icon-close div:nth-child(2) {
+  width: 2px;
+  height: 100%;
+  background-color: #9c9f9c;
+  position: absolute;
+  transform: rotate(-45deg);
+  border-radius: 2px;
 }
 
 /* Modal Content */
@@ -745,6 +776,16 @@ ul#nav li a:hover:after {
 
 .modal-content > *:last-child {
   margin-bottom: 0;
+}
+
+.modal-content li {
+  color: var(--nightBlue);
+}
+
+.redheart {
+  color: #ff0000;
+  font-size: 14px;
+  font-family: 'arial unicode MS', arial, geneva, sans-serif;
 }
 
 @media (min-width: 600px) {
