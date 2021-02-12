@@ -281,8 +281,15 @@ ul#nav li a:hover:after {
   margin-bottom: 6px;
 }
 #contact .header-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   padding-top: 12px;
   color: var(--nightBlue);
@@ -317,14 +324,21 @@ ul#nav li a:hover:after {
   font-size: 15px;
   line-height: 24px;
   width: 65%;
-  -webkit-border-radius: 16px;
   border-radius: 16px;
   background: #ebeeee;
+  -webkit-box-shadow: inset 0 0 15px rgba(55, 84, 170, 0),
+    inset 0 0 20px rgba(255, 255, 255, 0), 7px 7px 15px rgba(55, 84, 170, 0.15),
+    -7px -7px 20px rgba(255, 255, 255, 1),
+    inset 0px 0px 4px rgba(255, 255, 255, 0.2);
   box-shadow: inset 0 0 15px rgba(55, 84, 170, 0),
     inset 0 0 20px rgba(255, 255, 255, 0), 7px 7px 15px rgba(55, 84, 170, 0.15),
     -7px -7px 20px rgba(255, 255, 255, 1),
     inset 0px 0px 4px rgba(255, 255, 255, 0.2);
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in-out;
   transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 #contact input:focus,
 #contact textarea:focus,
@@ -335,9 +349,32 @@ ul#nav li a:hover:after {
   color: var(--nightBlue);
   border-radius: 16px;
   background: #ebeeee;
+  -webkit-box-shadow: inset 7px 7px 15px rgba(55, 84, 170, 0.15),
+    inset -7px -7px 20px rgba(255, 255, 255, 1),
+    0px 0px 4px rgba(255, 255, 255, 0.2);
   box-shadow: inset 7px 7px 15px rgba(55, 84, 170, 0.15),
     inset -7px -7px 20px rgba(255, 255, 255, 1),
     0px 0px 4px rgba(255, 255, 255, 0.2);
+}
+#contact input::-webkit-input-placeholder,
+#contact textarea::-webkit-input-placeholder,
+#contact select::-webkit-input-placeholder {
+  color: #a8b4be;
+}
+#contact input::-moz-placeholder,
+#contact textarea::-moz-placeholder,
+#contact select::-moz-placeholder {
+  color: #a8b4be;
+}
+#contact input:-ms-input-placeholder,
+#contact textarea:-ms-input-placeholder,
+#contact select:-ms-input-placeholder {
+  color: #a8b4be;
+}
+#contact input::-ms-input-placeholder,
+#contact textarea::-ms-input-placeholder,
+#contact select::-ms-input-placeholder {
+  color: #a8b4be;
 }
 #contact input::placeholder,
 #contact textarea::placeholder,
@@ -349,15 +386,21 @@ ul#nav li a:hover:after {
   border: none;
   cursor: pointer;
   margin-left: 26%;
-  -webkit-border-radius: 16px;
   border-radius: 16px;
   background: #ebeeee;
+  -webkit-box-shadow: inset 0 0 15px rgba(55, 84, 170, 0),
+    inset 0 0 20px rgba(255, 255, 255, 0), 7px 7px 15px rgba(55, 84, 170, 0.15),
+    -7px -7px 20px rgba(255, 255, 255, 1),
+    inset 0px 0px 4px rgba(255, 255, 255, 0.2);
   box-shadow: inset 0 0 15px rgba(55, 84, 170, 0),
     inset 0 0 20px rgba(255, 255, 255, 0), 7px 7px 15px rgba(55, 84, 170, 0.15),
     -7px -7px 20px rgba(255, 255, 255, 1),
     inset 0px 0px 4px rgba(255, 255, 255, 0.2);
 }
 #contact button.submit:hover {
+  -webkit-box-shadow: inset 7px 7px 15px rgba(55, 84, 170, 0.15),
+    inset -7px -7px 20px rgba(255, 255, 255, 1),
+    0px 0px 4px rgba(255, 255, 255, 0.2);
   box-shadow: inset 7px 7px 15px rgba(55, 84, 170, 0.15),
     inset -7px -7px 20px rgba(255, 255, 255, 1),
     0px 0px 4px rgba(255, 255, 255, 0.2);
@@ -447,9 +490,7 @@ footer .social-links li:first-child {
   background-color: #525252;
 
   -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 
   color: var(--greyish);

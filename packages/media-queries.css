@@ -126,6 +126,13 @@
   .flip-card {
     transform: scale(0.6);
   }
+  .modal-wrapper {
+    width: 80%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
   #buttons button {
     padding: 8px 12px;
   }
@@ -192,6 +199,12 @@
   }
   #plans li {
     font-size: 20px;
+  }
+  .modal-description {
+    font-size: 12px;
+  }
+  .modal-content li {
+    font-size: 12px;
   }
   #buttons {
     display: none;

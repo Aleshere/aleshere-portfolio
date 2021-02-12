@@ -225,6 +225,8 @@ header {
   height: 450px;
   margin: 16px;
 
+  -webkit-perspective: 1000px;
+
   perspective: 1000px;
 }
 
@@ -234,13 +236,17 @@ header {
   height: 100%;
 
   position: relative;
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
+  -webkit-transition: 0.6s 0.1s;
+  -o-transition: 0.6s 0.1s;
   transition: 0.6s 0.1s;
 }
 
 /* hover and focus-within states */
 .flip-card-container:hover .flip-card,
 .flip-card-container:focus-within .flip-card {
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 
@@ -257,21 +263,33 @@ header {
   left: 0;
   overflow: hidden;
 
+  -webkit-backface-visibility: hidden;
+
   backface-visibility: hidden;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 /* .card-front */
 .card-front {
+  -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg);
   z-index: 2;
 }
 
 /* .card-back */
 .card-back {
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
   z-index: 1;
 }
@@ -326,6 +344,7 @@ header {
   background: hsla(var(--hue), 25%, 10%, 0.5);
 }
 .card-front .img-bg {
+  -webkit-clip-path: polygon(0 20%, 100% 40%, 100% 100%, 0 100%);
   clip-path: polygon(0 20%, 100% 40%, 100% 100%, 0 100%);
 }
 .card-front .img-bg::before {
@@ -334,6 +353,8 @@ header {
   position: absolute;
   top: 34%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(18deg);
+  -ms-transform: translate(-50%, -50%) rotate(18deg);
   transform: translate(-50%, -50%) rotate(18deg);
 
   width: 100%;
@@ -342,9 +363,14 @@ header {
   border-left-color: transparent;
   border-right-color: transparent;
 
+  -webkit-transition: 0.1s;
+
+  -o-transition: 0.1s;
+
   transition: 0.1s;
 }
 .card-back .img-bg {
+  -webkit-clip-path: polygon(0 20%, 100% 40%, 100% 100%, 0 100%);
   clip-path: polygon(0 20%, 100% 40%, 100% 100%, 0 100%);
 }
 
@@ -365,9 +391,20 @@ header {
   list-style: none;
   color: var(--white-1);
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -413,6 +450,8 @@ header {
   position: absolute;
   top: 0;
   right: 50%;
+  -webkit-transform: translate(50%);
+  -ms-transform: translate(50%);
   transform: translate(50%);
 
   color: var(--white-1);
@@ -433,6 +472,8 @@ header {
   border: 1px solid var(--grey);
   border-radius: 1000px;
   background: transparent;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 
   cursor: pointer;
@@ -444,6 +485,8 @@ header {
   border-color: var(--primary);
 }
 #plans button:active {
+  -webkit-transform: translate(2px);
+  -ms-transform: translate(2px);
   transform: translate(2px);
 }
 
@@ -474,6 +517,8 @@ header {
   position: absolute;
 
   opacity: var(--op);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -488,6 +533,8 @@ header {
 .lines--1,
 .lines--2 {
   top: 0;
+  -webkit-transform: translateY(calc((var(--tr) - (var(--tr) * 2)) * 1%));
+  -ms-transform: translateY(calc((var(--tr) - (var(--tr) * 2)) * 1%));
   transform: translateY(calc((var(--tr) - (var(--tr) * 2)) * 1%));
 }
 
@@ -502,6 +549,10 @@ header {
 .lines--3,
 .lines--4 {
   bottom: 0;
+  -webkit-transform: translateY(
+    calc((var(--tr) + (var(--tr) - var(--tr))) * 1%)
+  );
+  -ms-transform: translateY(calc((var(--tr) + (var(--tr) - var(--tr))) * 1%));
   transform: translateY(calc((var(--tr) + (var(--tr) - var(--tr))) * 1%));
 }
 
@@ -523,6 +574,8 @@ header {
 .lines--5,
 .lines--6 {
   left: 0;
+  -webkit-transform: translateX(calc((var(--tr) - (var(--tr) * 2)) * 1%));
+  -ms-transform: translateX(calc((var(--tr) - (var(--tr) * 2)) * 1%));
   transform: translateX(calc((var(--tr) - (var(--tr) * 2)) * 1%));
 }
 
@@ -537,6 +590,10 @@ header {
 .lines--7,
 .lines--8 {
   right: 0;
+  -webkit-transform: translateX(
+    calc((var(--tr) + (var(--tr) - var(--tr))) * 1%)
+  );
+  -ms-transform: translateX(calc((var(--tr) + (var(--tr) - var(--tr))) * 1%));
   transform: translateX(calc((var(--tr) + (var(--tr) - var(--tr))) * 1%));
 }
 
