@@ -128,7 +128,7 @@
                      </figure>
 
                      <span class="price-tag">from $799</span>
-                     <form netlify name="formGrowthPackage" netlify-honeypot="bot-field" hidden >
+                     <form netlify action="/submissionSuccess.html" method="POST" name="formGrowthPackage" netlify-honeypot="bot-field" hidden >
                         <input type="text" name="contactName" />
                         <input type="email" name="contactEmail" />
                      </form>
@@ -195,6 +195,10 @@
                   </figure>
 
                   <span class="price-tag">from $299</span>
+                  <form netlify action="/submissionSuccess.html" method="POST" name="formGuardianPackage" netlify-honeypot="bot-field" hidden >
+                     <input type="text" name="contactName" />
+                     <input type="email" name="contactEmail" />
+                  </form>
                   <button class="modal-show" data-description='<span style="font-size:130%;color:red;" >&hearts;</span>  Our security focused plan, highly customizable' data-title='Guardian Bundle - from $299' data-content='<ul>
                         <li>- Malware scan and threat detection</li>
                         <li>- Speed checkup - both for desktop and mobile</li>
@@ -203,18 +207,18 @@
                         <li>- 3 months of CMS updates</li>
                         <li>- 3 months of CMS backups</li>
                      </ul>
-                     <form netlify action="/submissionSuccess.html" method="POST" id="formGuardianPackage" name="formGuardianPackage" netlify-honeypot="bot-field">
-                           <fieldset><p class="u-visually-hidden"><label>Don’t fill this out if you are human: <input name="bot-field"></label></p>
-                           <div>
-                              <label for="contactName">Name <span class="required">*</span></label>
-                              <input type="text" value="" size="35" id="contactName" name="contactName">
-                           </div>
-                           <div>
-                              <label for="contactEmail">Email <span class="required">*</span></label>
-                              <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
-                           </div>
-                           <button type="submit" class="submit">I am interested in this plan</button>
-                        </fieldset>
+                     <form action="/submissionSuccess.html" method="POST" id="formGuardianPackage" name="formGuardianPackage" netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="formGuardianPackage" />
+                        <p class="u-visually-hidden"><label>Don’t fill this out if you are human: <input name="bot-field"></label></p>
+                        <div>
+                           <label for="contactName">Name <span class="required">*</span></label>
+                           <input type="text" value="" size="35" id="contactName" name="contactName">
+                        </div>
+                        <div>
+                           <label for="contactEmail">Email <span class="required">*</span></label>
+                           <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+                        </div>
+                        <button type="submit" class="submit">I am interested in this plan</button>
                      </form>' >View Offer</button>
 
                   <div class="lines-container">
@@ -257,6 +261,10 @@
                   </figure>
 
                   <span class="price-tag">from $499</span>
+                  <form netlify action="/submissionSuccess.html" method="POST" name="formAgilePackage" netlify-honeypot="bot-field" hidden >
+                     <input type="text" name="contactName" />
+                     <input type="email" name="contactEmail" />
+                  </form>
                   <button class="modal-show" data-description='<span style="font-size:130%;color:red;" >&hearts;</span>  A quick and efficient plan to get you online fast' data-title='Agile Bundle - from $499' data-content='<ul>
                         <li>- Up to 3 responsive web pages</li>
                         <li>- 1 Contact form</li>
@@ -265,18 +273,18 @@
                         <li>- Website T&Cs page</li>
                         <li>- Possibility to deploy to your CMS for a surcharge</li>
                      </ul>
-                     <form netlify action="/submissionSuccess.html" method="POST" id="formAgilePackage" name="formAgilePackage" netlify-honeypot="bot-field">
-                           <fieldset><p class="u-visually-hidden"><label>Don’t fill this out if you are human: <input name="bot-field"></label></p>
-                           <div>
-                              <label for="contactName">Name <span class="required">*</span></label>
-                              <input type="text" value="" size="35" id="contactName" name="contactName">
-                           </div>
-                           <div>
-                              <label for="contactEmail">Email <span class="required">*</span></label>
-                              <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
-                           </div>
-                           <button type="submit" class="submit">I am interested in this plan</button>
-                        </fieldset>
+                     <form action="/submissionSuccess.html" method="POST" id="formAgilePackage" name="formAgilePackage" netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="formAgilePackage" />
+                        <p class="u-visually-hidden"><label>Don’t fill this out if you are human: <input name="bot-field"></label></p>
+                        <div>
+                           <label for="contactName">Name <span class="required">*</span></label>
+                           <input type="text" value="" size="35" id="contactName" name="contactName">
+                        </div>
+                        <div>
+                           <label for="contactEmail">Email <span class="required">*</span></label>
+                           <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+                        </div>
+                        <button type="submit" class="submit">I am interested in this plan</button>
                      </form>' >View Offer</button>
 
                   <div class="lines-container">
@@ -319,6 +327,10 @@
                   </figure>
 
                   <span class="price-tag">from $499</span>
+                  <form netlify action="/submissionSuccess.html" method="POST" name="formSeoGuruPackage" netlify-honeypot="bot-field" hidden >
+                     <input type="text" name="contactName" />
+                     <input type="email" name="contactEmail" />
+                  </form>
                   <button class="modal-show" data-description='<span style="font-size:130%;color:red;" >&hearts;</span>  Our first tier SEO optimization plan' data-title='SEO Guru Bundle - from $499' data-content='<ul>
                         <li>- Full SEO audit</li>
                         <li>- On Page and technical SEO optimization for up to 10 web pages</li>
@@ -327,20 +339,20 @@
                         <li>- Up to 6 schemas to improve your search results appearance</li>
                         <li>- Possibility to hire blog writing professionals for a surcharge</li>
                      </ul>
-                     <form netlify action="/submissionSuccess.html" method="POST" id="formSeoGuruPackage" name="formSeoGuruPackage" netlify-honeypot="bot-field">
-                           <fieldset><p class="u-visually-hidden"><label>Don’t fill this out if you are human: <input name="bot-field"></label></p>
-                           <div>
-                              <label for="contactName">Name <span class="required">*</span></label>
-                              <input type="text" value="" size="35" id="contactName" name="contactName">
-                           </div>
-                           <div>
-                              <label for="contactEmail">Email <span class="required">*</span></label>
-                              <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
-                           </div>
-                           <button type="submit" class="submit">I am interested in this plan</button>
-                        </fieldset>
+                     <form action="/submissionSuccess.html" method="POST" id="formSeoGuruPackage" name="formSeoGuruPackage" netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="formSeoGuruPackage" />
+                        <p class="u-visually-hidden"><label>Don’t fill this out if you are human: <input name="bot-field"></label></p>
+                        <div>
+                           <label for="contactName">Name <span class="required">*</span></label>
+                           <input type="text" value="" size="35" id="contactName" name="contactName">
+                        </div>
+                        <div>
+                           <label for="contactEmail">Email <span class="required">*</span></label>
+                           <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+                        </div>
+                        <button type="submit" class="submit">I am interested in this plan</button>
                      </form>' >View Offer</button>
-
+                     
                   <div class="lines-container">
                      <span class="lines lines--1"></span>
                      <span class="lines lines--2"></span>
@@ -381,6 +393,10 @@
                   </figure>
 
                   <span class="price-tag">from $99</span>
+                  <form netlify action="/submissionSuccess.html" method="POST" name="formKindlePackage" netlify-honeypot="bot-field" hidden >
+                     <input type="text" name="contactName" />
+                     <input type="email" name="contactEmail" />
+                  </form>
                   <button class="modal-show" data-description='<span style="font-size:130%;color:red;" >&hearts;</span>  Our most simple bundle to get you started' data-title='Kindle Bundle - from $99' data-content='<ul>
                         <li>- Market analysis</li>
                         <li>- Improvements to Technical, On Page and Off Page SEO</li>
@@ -389,18 +405,18 @@
                         <li>- Setup and management of 1 social media platform</li>
                         <li>- 2 months of backups and CMS updates</li>
                      </ul>
-                     <form netlify action="/submissionSuccess.html" method="POST" id="formKindlePackage" name="formKindlePackage" netlify-honeypot="bot-field">
-                           <fieldset><p class="u-visually-hidden"><label>Don’t fill this out if you are human: <input name="bot-field"></label></p>
-                           <div>
-                              <label for="contactName">Name <span class="required">*</span></label>
-                              <input type="text" value="" size="35" id="contactName" name="contactName">
-                           </div>
-                           <div>
-                              <label for="contactEmail">Email <span class="required">*</span></label>
-                              <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
-                           </div>
-                           <button type="submit" class="submit">I am interested in this plan</button>
-                        </fieldset>
+                     <form action="/submissionSuccess.html" method="POST" id="formKindlePackage" name="formKindlePackage" netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="formKindlePackage" />
+                        <p class="u-visually-hidden"><label>Don’t fill this out if you are human: <input name="bot-field"></label></p>
+                        <div>
+                           <label for="contactName">Name <span class="required">*</span></label>
+                           <input type="text" value="" size="35" id="contactName" name="contactName">
+                        </div>
+                        <div>
+                           <label for="contactEmail">Email <span class="required">*</span></label>
+                           <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+                        </div>
+                        <button type="submit" class="submit">I am interested in this plan</button>
                      </form>' >View Offer</button>
 
                   <div class="lines-container">
@@ -443,6 +459,10 @@
                   </figure>
 
                   <span class="price-tag">from $699</span>
+                  <form netlify action="/submissionSuccess.html" method="POST" name="formBloggerPackage" netlify-honeypot="bot-field" hidden >
+                     <input type="text" name="contactName" />
+                     <input type="email" name="contactEmail" />
+                  </form>
                   <button class="modal-show" data-description='<span style="font-size:130%;color:red;" >&hearts;</span> Designed to bring blogs at the top of search result pages' data-title='Blogger Bundle - from $699' data-content='<ul>
                         <li>- Domain, email and URL optimization</li>
                         <li>- Up to 2 target personas</li>
@@ -451,18 +471,18 @@
                         <li>- Copywriting and call-to-action suggestions</li>
                         <li>- Possibility to add to CMS optimization</li>
                      </ul>
-                     <form netlify action="/submissionSuccess.html" method="POST" id="formBloggerPackage" name="formBloggerPackage" netlify-honeypot="bot-field">
-                           <fieldset><p class="u-visually-hidden"><label>Don’t fill this out if you are human: <input name="bot-field"></label></p>
-                           <div>
-                              <label for="contactName">Name <span class="required">*</span></label>
-                              <input type="text" value="" size="35" id="contactName" name="contactName">
-                           </div>
-                           <div>
-                              <label for="contactEmail">Email <span class="required">*</span></label>
-                              <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
-                           </div>
-                           <button type="submit" class="submit">I am interested in this plan</button>
-                        </fieldset>
+                     <form action="/submissionSuccess.html" method="POST" id="formBloggerPackage" name="formBloggerPackage" netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="formBloggerPackage" />
+                        <p class="u-visually-hidden"><label>Don’t fill this out if you are human: <input name="bot-field"></label></p>
+                        <div>
+                           <label for="contactName">Name <span class="required">*</span></label>
+                           <input type="text" value="" size="35" id="contactName" name="contactName">
+                        </div>
+                        <div>
+                           <label for="contactEmail">Email <span class="required">*</span></label>
+                           <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+                        </div>
+                        <button type="submit" class="submit">I am interested in this plan</button>
                      </form>' >View Offer</button>
 
                   <div class="lines-container">
@@ -505,6 +525,10 @@
                   </figure>
 
                   <span class="price-tag">from $1099</span>
+                  <form netlify action="/submissionSuccess.html" method="POST" name="formCommercePackage" netlify-honeypot="bot-field" hidden >
+                     <input type="text" name="contactName" />
+                     <input type="email" name="contactEmail" />
+                  </form>
                   <button class="modal-show" data-description='<span style="font-size:130%;color:red;" >&hearts;</span> Build your own e-commerce website in style ' data-title='Commerce Bundle - from $1099' data-content='<ul>
                         <li>- Domain appraisal</li>
                         <li>- Responsive gallery for up to 25 items</li>
@@ -513,18 +537,18 @@
                         <li>- Stripe payments</li>
                         <li>- 3 months ongoing maintenance</li>
                      </ul>
-                     <form netlify action="/submissionSuccess.html" method="POST" id="formCommercePackage" name="formCommercePackage" netlify-honeypot="bot-field">
-                           <fieldset><p class="u-visually-hidden"><label>Don’t fill this out if you are human: <input name="bot-field"></label></p>
-                           <div>
-                              <label for="contactName">Name <span class="required">*</span></label>
-                              <input type="text" value="" size="35" id="contactName" name="contactName">
-                           </div>
-                           <div>
-                              <label for="contactEmail">Email <span class="required">*</span></label>
-                              <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
-                           </div>
-                           <button type="submit" class="submit">I am interested in this plan</button>
-                        </fieldset>
+                     <form action="/submissionSuccess.html" method="POST" id="formCommercePackage" name="formCommercePackage" netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="formCommercePackage" />
+                        <p class="u-visually-hidden"><label>Don’t fill this out if you are human: <input name="bot-field"></label></p>
+                        <div>
+                           <label for="contactName">Name <span class="required">*</span></label>
+                           <input type="text" value="" size="35" id="contactName" name="contactName">
+                        </div>
+                        <div>
+                           <label for="contactEmail">Email <span class="required">*</span></label>
+                           <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+                        </div>
+                        <button type="submit" class="submit">I am interested in this plan</button>
                      </form>' >View Offer</button>
 
                   <div class="lines-container">
@@ -567,6 +591,10 @@
                   </figure>
 
                   <span class="price-tag">from $899</span>
+                  <form netlify action="/submissionSuccess.html" method="POST" name="formSeoBoostPackage" netlify-honeypot="bot-field" hidden >
+                     <input type="text" name="contactName" />
+                     <input type="email" name="contactEmail" />
+                  </form>
                   <button class="modal-show" data-description='<span style="font-size:130%;color:red;" >&hearts;</span>  Our second tier SEO optimization plan: 100% boost it up' data-title='SEO Boost Bundle - from $899' data-content='<ul>
                         <li>- Everything in SEO guru plan</li>
                         <li>- Meta tags check up and fix</li>
@@ -575,18 +603,18 @@
                         <li>- Up to 5 competitors analysis</li>
                         <li>- 2 months ongoing SEO optimization</li>
                      </ul>
-                     <form netlify action="/submissionSuccess.html" method="POST" id="formSeoBoostPackage" name="formSeoBoostPackage" netlify-honeypot="bot-field">
-                           <fieldset><p class="u-visually-hidden"><label>Don’t fill this out if you are human: <input name="bot-field"></label></p>
-                           <div>
-                              <label for="contactName">Name <span class="required">*</span></label>
-                              <input type="text" value="" size="35" id="contactName" name="contactName">
-                           </div>
-                           <div>
-                              <label for="contactEmail">Email <span class="required">*</span></label>
-                              <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
-                           </div>
-                           <button type="submit" class="submit">I am interested in this plan</button>
-                        </fieldset>
+                     <form action="/submissionSuccess.html" method="POST" id="formSeoBoostPackage" name="formSeoBoostPackage" netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="formSeoBoostPackage" />
+                        <p class="u-visually-hidden"><label>Don’t fill this out if you are human: <input name="bot-field"></label></p>
+                        <div>
+                           <label for="contactName">Name <span class="required">*</span></label>
+                           <input type="text" value="" size="35" id="contactName" name="contactName">
+                        </div>
+                        <div>
+                           <label for="contactEmail">Email <span class="required">*</span></label>
+                           <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+                        </div>
+                        <button type="submit" class="submit">I am interested in this plan</button>
                      </form>' >View Offer</button>
 
                   <div class="lines-container">
