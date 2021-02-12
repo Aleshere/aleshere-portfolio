@@ -594,9 +594,14 @@ ul#nav li a:hover:after {
   margin-bottom: 12px;
 }
 #offer h3 {
-  font: 18px/30px 'opensans-bold', sans-serif;
+  font: 18px/30px 'opensans', sans-serif;
   color: var(--nightBlue);
-  margin-bottom: 12px;
+  margin-bottom: 0;
+}
+#offer h4 {
+  font: 16px/30px 'opensans', sans-serif;
+  color: var(--nightBlue);
+  margin-bottom: 0;
 }
 #offer p {
   font-size: 24px;
@@ -644,7 +649,7 @@ ul#nav li a:hover:after {
   color: var(--nightBlue);
 }
 .offer ol {
-  margin-top: 24px;
+  margin-top: 12px;
 }
 #offer label span {
   color: var(--nightBlue);
@@ -659,7 +664,7 @@ ul#nav li a:hover:after {
   color: var(--nightBlue);
 }
 #offer span {
-  padding-bottom: 10px;
+  font: 22px/30px 'opensans-bold', sans-serif;
   display: inline-block;
 }
 .paddingBottom {

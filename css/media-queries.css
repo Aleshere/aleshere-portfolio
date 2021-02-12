@@ -8,6 +8,9 @@
     letter-spacing: -1px;
     margin: 0 auto 12px auto;
   }
+  div.panel.show {
+    max-height: 200rem;
+  }
 }
 
 /* screenwidth less than 900px
@@ -50,6 +53,15 @@
     width: 50%;
   }
 
+  #domain .ad-cards div:nth-child(2),
+  #design .ad-cards div:nth-child(2),
+  #maintenance .ad-cards div:nth-child(2),
+  #seo__audit .ad-cards div:nth-child(2),
+  #localseo__services .ad-cards div:nth-child(2),
+  #seo__services .ad-cards div:nth-child(2) {
+    display: none;
+  }
+
   /* Resume Section
    ------------------------------------------------------------------- */
   #resume h1 {
@@ -57,6 +69,10 @@
   }
   #resume .main-col {
     padding-right: 5%;
+  }
+
+  div.panel.show {
+    max-height: 200rem;
   }
 
   /* Contact Section
@@ -275,9 +291,43 @@
     width: 60%;
     margin-bottom: 20px;
   }
+  .counters-container div:nth-child(3) {
+    display: none;
+  }
 
   #list-services {
     padding: 20px;
+  }
+  #domain,
+  #design,
+  #maintenance,
+  #seo__audit,
+  #localseo__services,
+  #seo__services {
+    padding: 20px;
+  }
+
+  #domain .ad-cards,
+  #design .ad-cards,
+  #maintenance .ad-cards,
+  #seo__audit .ad-cards,
+  #localseo__services .ad-cards,
+  #seo__services .ad-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #domain .ad-cards div:nth-child(2),
+  #design .ad-cards div:nth-child(2),
+  #maintenance .ad-cards div:nth-child(2),
+  #seo__audit .ad-cards div:nth-child(2),
+  #localseo__services .ad-cards div:nth-child(2),
+  #seo__services .ad-cards div:nth-child(2) {
+    display: flex;
+  }
+  #offer .flexRight {
+    justify-content: center;
+    margin-bottom: 30px;
   }
 
   /* contact Section
@@ -325,6 +375,9 @@
   #message-success {
     width: 100%;
     margin-left: 0;
+  }
+  div.panel.show {
+    max-height: 200rem;
   }
 
   /* footer
@@ -412,10 +465,6 @@
   #offer {
     padding-top: 30px;
   }
-  #offer .flexRight {
-    justify-content: center;
-    margin-bottom: 30px;
-  }
   #offer .profile-pic {
     width: 160px;
     height: 160px;
@@ -435,7 +484,13 @@
   .img-container {
     text-align: center;
   }
+  .counters-container {
+    flex-direction: column;
+  }
 
+  div.panel.show {
+    max-height: 200rem;
+  }
   /* footer
    ------------------------------------------------------------------------ */
 

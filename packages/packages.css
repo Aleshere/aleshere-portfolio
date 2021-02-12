@@ -30,6 +30,10 @@ body {
   color: var(--reddish);
 }
 
+.media-query-check {
+  display: none;
+}
+
 /* ------------------------------------------------------------------ */
 /* b. Navbar Styles
 /* ------------------------------------------------------------------ */
@@ -50,7 +54,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 2.5px;
   margin: 0 auto;
-  z-index: 100;
+  z-index: 101;
   position: fixed;
   left: 0;
   top: 0;

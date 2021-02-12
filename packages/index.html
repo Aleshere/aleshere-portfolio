@@ -2,6 +2,14 @@
 <html class="no-js" lang="en">
 <head>
    
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-BTEEDTDPYH"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-BTEEDTDPYH');
+   </script>
 
    <!--- General
    ================================================== -->
@@ -22,14 +30,14 @@
    
    <!--- Basic Page Needs
    ================================================== -->
-   <meta name="description" content="We build web sites, create websites for small business, provide affordable seo services, and much more. Entrepreneurs and SEO specialists.">
-   <meta name="keywords" content="websites build, build pc websites, websites build company, seo services small business, seo experts, seo consultants, affordable seo services, affordable seo company,  search engine optimization, web page rankings, create websites uk, create websites for business, create websites with blog, create websites small business, create websites qr code, web site design, web site design services"/>
+   <meta name="description" content="Check our web and seo bundles. Affordable and effective. Contact us for custom web and seo quotes.">
+   <meta name="keywords" content="affordable website package, affordable seo package, web maintenance bundle, seo services packages, web services packages, website company offer, seo company offers, seo company deals, web design deals, website cheap plans"/>
    
    
    <!-- Facebook Card Data -->
     <meta property="og:title" content="The Coding Lab | Build Websites and Affordable SEO" />
-    <meta property="og:url" content="https://www.thecodinglab.it" />
-    <meta property="og:description" content="We build web sites, create websites for small business, provide affordable seo services, and much more. Entrepreneurs and SEO specialists." />
+    <meta property="og:url" content="https://www.thecodinglab.it/packages/index.html" />
+    <meta property="og:description" content="Check our web and seo bundles. Affordable and effective. Contact us for custom web and seo quotes." />
     <meta property="og:site_name" content="The Coding Lab" />
     <meta property="og:image" content="images/favicon.png" />
    
@@ -37,12 +45,13 @@
     <!-- Twitter Card Data -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="The Coding Lab" />
-    <meta name="twitter:description" content="We build web sites, create websites for small business, provide affordable seo services, and much more. Entrepreneurs and SEO specialists." />
+    <meta name="twitter:description" content="Check our web and seo bundles. Affordable and effective. Contact us for custom web and seo quotes." />
     <meta name="twitter:image" content="images/favicon.png" />
     
    
    <!-- CSS
     ================================================== -->
+    <link rel="canonical" href="https://www.thecodinglab.it/packages/index.html">
    <link rel="preload" as="style" href="../css/fontello/css/fontello.css">
    <link rel="stylesheet" href="../css/default.css">
    <link rel="stylesheet" href="packages.css">
@@ -88,6 +97,7 @@
          <div>
             <h1 class="reddish bold" >Bundled Packages</h1>
             <h3 class="nightBlue h4" >Contact us to discuss your specific requirements</h3>
+            <h3 class="media-query-check" ></h3>
          </div>
    </section>
 
@@ -635,10 +645,8 @@
             </div>
          </div>
       </div>
-      
-
-
    </section>
+
     
         <!-- footer
     ================================================== -->
@@ -680,12 +688,20 @@
    <script src="../js/jquery.mousewheel.min.js"></script>
    <script src="../js/utilities/packagesModals.js"></script>
    <script>
-      $("#carousel").Cloud9Carousel( {
-         buttonLeft: $("#buttons > .left"),
-         buttonRight: $("#buttons > .right"),
-         speed: 1,
-         bringToFront: true,
-      })       
+      $(document).ready(function(){
+         if ( $('.media-query-check').is(":visible") ) {
+            // do not do anything
+         } else {
+            // start carousel
+            $("#carousel").Cloud9Carousel( {
+               buttonLeft: $("#buttons > .left"),
+               buttonRight: $("#buttons > .right"),
+               speed: 1,
+               bringToFront: true,
+            })       
+         }
+      });
+
    </script>
    
    

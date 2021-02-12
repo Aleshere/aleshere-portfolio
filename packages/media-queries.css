@@ -172,6 +172,28 @@
     float: none;
   }
 
+  /* Main Section */
+  .media-query-check {
+    display: inline-block;
+  }
+  #carousel {
+    height: auto;
+  }
+  .cloud9-item {
+    width: 300px;
+    height: 450px;
+    margin-bottom: 20px;
+  }
+  .flip-card {
+    transform: scale(1);
+  }
+  #plans li {
+    font-size: 20px;
+  }
+  #buttons {
+    display: none;
+  }
+
   /* footer
    ------------------------------------------------------------------------ */
 
