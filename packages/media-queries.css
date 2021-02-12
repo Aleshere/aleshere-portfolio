@@ -173,6 +173,9 @@
   }
 
   /* Main Section */
+  #title {
+    padding: 0 30px;
+  }
   .media-query-check {
     display: inline-block;
   }

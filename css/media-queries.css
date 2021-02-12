@@ -456,6 +456,10 @@
     display: none;
   }
 
+  #title {
+    padding: 0 30px;
+  }
+
   /* About */
   #about h1 span {
     display: none;
@@ -500,5 +504,11 @@
   }
   footer .social-links li {
     margin-left: 14px;
+  }
+  .mob-hide {
+    display: none;
+  }
+  #contactForm2 input {
+    border: 1px dotted var(--reddish);
   }
 }
