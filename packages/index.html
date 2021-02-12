@@ -128,9 +128,9 @@
                      </figure>
 
                      <span class="price-tag">from $799</span>
-                     <form netlify action="/submissionSuccess.html" method="POST" name="formGrowthPackage" netlify-honeypot="bot-field" hidden >
-                        <input type="text" name="contactName" size="35" id="contactName" />
-                        <input type="email" name="contactEmail" size="35" id="contactEmail" />
+                     <form netlify name="formGrowthPackage" netlify-honeypot="bot-field" hidden >
+                        <input type="text" name="contactName" />
+                        <input type="email" name="contactEmail" />
                      </form>
                      <button class="modal-show" data-description='<span style="font-size:130%;color:red;" >&hearts;</span>  Ideal for organic growth and ongoing improvements' data-title='Growth Bundle - from $799' data-content='<ul>
                         <li>- Assessment of current SEO capabilities</li>
@@ -140,15 +140,16 @@
                         <li>- Setup and management of 1 social media platform</li>
                         <li>- 6 months of backups and CMS updates</li>
                      </ul>
-                     <form netlify action="/submissionSuccess.html" method="POST" id="formGrowthPackage" name="formGrowthPackage" netlify-honeypot="bot-field">
+                     <form action="/submissionSuccess.html" method="POST" id="formGrowthPackage" name="formGrowthPackage" netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="formGrowthPackage" />
                            <p class="u-visually-hidden"><label>Don’t fill this out if you are human: <input name="bot-field"></label></p>
                            <div>
                               <label for="contactName">Name <span class="required">*</span></label>
-                              <input type="hidden" value="formGrowthPackage" size="35" id="contactName" name="form-name">
+                              <input type="text" value="" name="contactName" size="35" id="contactName" >
                            </div>
                            <div>
                               <label for="contactEmail">Email <span class="required">*</span></label>
-                              <input type="hidden" value="formGrowthPackage" size="35" id="contactEmail" name="form-name">
+                              <input type="email" value="" name="contactEmail" size="35" id="contactEmail" >
                            </div>
                            <button type="submit" class="submit">I am interested in this plan</button>
                         
