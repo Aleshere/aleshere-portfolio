@@ -298,6 +298,13 @@ ul#nav li a:hover:after {
   perspective: 1000px;
 }
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* .flip-card */
 .flip-card {
   width: 100%;
@@ -306,6 +313,8 @@ ul#nav li a:hover:after {
   position: relative;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
+  -webkit-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
 }
 
@@ -329,10 +338,20 @@ ul#nav li a:hover:after {
   left: 0;
   overflow: hidden;
 
+  -webkit-backface-visibility: hidden;
+
   backface-visibility: hidden;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -400,6 +419,7 @@ ul#nav li a:hover:after {
   background: hsla(var(--hue), 25%, 10%, 0.5);
 }
 .card-front .img-bg {
+  -webkit-clip-path: polygon(0 20%, 100% 40%, 100% 100%, 0 100%);
   clip-path: polygon(0 20%, 100% 40%, 100% 100%, 0 100%);
 }
 .card-front .img-bg::before {
@@ -408,6 +428,7 @@ ul#nav li a:hover:after {
   position: absolute;
   top: 34%;
   left: 50%;
+  -ms-transform: translate(-50%, -50%) rotate(18deg);
   transform: translate(-50%, -50%) rotate(18deg);
   -webkit-transform: translate(-50%, -50%) rotate(18deg);
 
@@ -417,9 +438,14 @@ ul#nav li a:hover:after {
   border-left-color: transparent;
   border-right-color: transparent;
 
+  -webkit-transition: 0.1s;
+
+  -o-transition: 0.1s;
+
   transition: 0.1s;
 }
 .card-back .img-bg {
+  -webkit-clip-path: polygon(0 20%, 100% 40%, 100% 100%, 0 100%);
   clip-path: polygon(0 20%, 100% 40%, 100% 100%, 0 100%);
 }
 
@@ -440,9 +466,20 @@ ul#nav li a:hover:after {
   list-style: none;
   color: var(--white-1);
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -488,6 +525,7 @@ ul#nav li a:hover:after {
   position: absolute;
   top: 0;
   right: 50%;
+  -ms-transform: translate(50%);
   transform: translate(50%);
   -webkit-transform: translate(50%);
 
@@ -509,6 +547,8 @@ ul#nav li a:hover:after {
   border: 1px solid var(--grey);
   border-radius: 1000px;
   background: transparent;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 
   cursor: pointer;
@@ -520,6 +560,7 @@ ul#nav li a:hover:after {
   border-color: var(--primary);
 }
 #plans button:active {
+  -ms-transform: translate(2px);
   transform: translate(2px);
   -webkit-transform: translate(2px);
 }
@@ -551,6 +592,8 @@ ul#nav li a:hover:after {
   position: absolute;
 
   opacity: var(--op);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -565,6 +608,7 @@ ul#nav li a:hover:after {
 .lines--1,
 .lines--2 {
   top: 0;
+  -ms-transform: translateY(calc((var(--tr) - (var(--tr) * 2)) * 1%));
   transform: translateY(calc((var(--tr) - (var(--tr) * 2)) * 1%));
   -webkit-transform: translateY(calc((var(--tr) - (var(--tr) * 2)) * 1%));
 }
@@ -580,6 +624,7 @@ ul#nav li a:hover:after {
 .lines--3,
 .lines--4 {
   bottom: 0;
+  -ms-transform: translateY(calc((var(--tr) + (var(--tr) - var(--tr))) * 1%));
   transform: translateY(calc((var(--tr) + (var(--tr) - var(--tr))) * 1%));
   -webkit-transform: translateY(
     calc((var(--tr) + (var(--tr) - var(--tr))) * 1%)
@@ -604,6 +649,7 @@ ul#nav li a:hover:after {
 .lines--5,
 .lines--6 {
   left: 0;
+  -ms-transform: translateX(calc((var(--tr) - (var(--tr) * 2)) * 1%));
   transform: translateX(calc((var(--tr) - (var(--tr) * 2)) * 1%));
   -webkit-transform: translateX(calc((var(--tr) - (var(--tr) * 2)) * 1%));
 }
@@ -619,6 +665,7 @@ ul#nav li a:hover:after {
 .lines--7,
 .lines--8 {
   right: 0;
+  -ms-transform: translateX(calc((var(--tr) + (var(--tr) - var(--tr))) * 1%));
   transform: translateX(calc((var(--tr) + (var(--tr) - var(--tr))) * 1%));
   -webkit-transform: translateX(
     calc((var(--tr) + (var(--tr) - var(--tr))) * 1%)
