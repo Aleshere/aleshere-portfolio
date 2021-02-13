@@ -512,6 +512,20 @@ PACKAGES PAGE HAS ITS OWN MEDIA QUERY
     max-height: 200rem;
   }
 
+  /* Contact Page */
+  #contact .section-head h1 {
+    font: 20px/20px 'opensans-bold', sans-serif;
+  }
+  #contact .h4 {
+    font-size: 18px;
+  }
+  #contact .ab-gap-2 {
+    height: 20px;
+  }
+  #contact label {
+    margin: 28px 0 16px 0;
+  }
+
   /* footer
    ------------------------------------------------------------------------ */
 
@@ -524,8 +538,5 @@ PACKAGES PAGE HAS ITS OWN MEDIA QUERY
   }
   .mob-hide {
     display: none;
-  }
-  #contactForm2 input {
-    border: 1px dotted var(--reddish);
   }
 }
