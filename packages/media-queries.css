@@ -210,6 +210,10 @@
     display: none;
   }
 
+  #modalContent button {
+    font: 12px/30px 'opensans-bold', sans-serif;
+  }
+
   /* footer
    ------------------------------------------------------------------------ */
 

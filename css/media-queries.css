@@ -1,3 +1,9 @@
+/* 
+-----------------------------------------
+PACKAGES PAGE HAS ITS OWN MEDIA QUERY
+-----------------------------------------
+*/
+
 /* screenwidth less than 1024px
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 1024px) {
@@ -456,6 +462,14 @@
     display: none;
   }
 
+  .columns {
+    padding: 0 20px !important;
+  }
+
+  #extra {
+    padding: 90px 20px 0 20px;
+  }
+
   #title {
     padding: 0 30px;
   }
@@ -485,16 +499,19 @@
   #list-services {
     padding: none;
   }
+  .question-container {
+    flex-direction: column;
+  }
   .img-container {
     text-align: center;
   }
   .counters-container {
     flex-direction: column;
   }
-
   div.panel.show {
     max-height: 200rem;
   }
+
   /* footer
    ------------------------------------------------------------------------ */
 

@@ -281,16 +281,16 @@ ul#nav li a:hover:after {
   margin-bottom: 6px;
 }
 #contact .header-col {
+  display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  justify-content: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
   -webkit-box-orient: vertical;
+  flex-direction: column;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
   padding-top: 12px;
   color: var(--nightBlue);
 }
@@ -326,19 +326,20 @@ ul#nav li a:hover:after {
   width: 65%;
   border-radius: 16px;
   background: #ebeeee;
-  -webkit-box-shadow: inset 0 0 15px rgba(55, 84, 170, 0),
-    inset 0 0 20px rgba(255, 255, 255, 0), 7px 7px 15px rgba(55, 84, 170, 0.15),
-    -7px -7px 20px rgba(255, 255, 255, 1),
-    inset 0px 0px 4px rgba(255, 255, 255, 0.2);
+  -webkit-appearance: none;
   box-shadow: inset 0 0 15px rgba(55, 84, 170, 0),
     inset 0 0 20px rgba(255, 255, 255, 0), 7px 7px 15px rgba(55, 84, 170, 0.15),
     -7px -7px 20px rgba(255, 255, 255, 1),
     inset 0px 0px 4px rgba(255, 255, 255, 0.2);
-  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  -webkit-box-shadow: inset 0 0 15px rgba(55, 84, 170, 0),
+    inset 0 0 20px rgba(255, 255, 255, 0), 7px 7px 15px rgba(55, 84, 170, 0.15),
+    -7px -7px 20px rgba(255, 255, 255, 1),
+    inset 0px 0px 4px rgba(255, 255, 255, 0.2);
   transition: -webkit-box-shadow 0.3s ease-in-out;
-  -o-transition: box-shadow 0.3s ease-in-out;
   transition: box-shadow 0.3s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in-out;
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
 }
 #contact input:focus,
 #contact textarea:focus,
@@ -349,10 +350,11 @@ ul#nav li a:hover:after {
   color: var(--nightBlue);
   border-radius: 16px;
   background: #ebeeee;
-  -webkit-box-shadow: inset 7px 7px 15px rgba(55, 84, 170, 0.15),
+  -webkit-appearance: none;
+  box-shadow: inset 7px 7px 15px rgba(55, 84, 170, 0.15),
     inset -7px -7px 20px rgba(255, 255, 255, 1),
     0px 0px 4px rgba(255, 255, 255, 0.2);
-  box-shadow: inset 7px 7px 15px rgba(55, 84, 170, 0.15),
+  -webkit-box-shadow: inset 7px 7px 15px rgba(55, 84, 170, 0.15),
     inset -7px -7px 20px rgba(255, 255, 255, 1),
     0px 0px 4px rgba(255, 255, 255, 0.2);
 }
@@ -388,20 +390,22 @@ ul#nav li a:hover:after {
   margin-left: 26%;
   border-radius: 16px;
   background: #ebeeee;
-  -webkit-box-shadow: inset 0 0 15px rgba(55, 84, 170, 0),
+  -webkit-appearance: none;
+  box-shadow: inset 0 0 15px rgba(55, 84, 170, 0),
     inset 0 0 20px rgba(255, 255, 255, 0), 7px 7px 15px rgba(55, 84, 170, 0.15),
     -7px -7px 20px rgba(255, 255, 255, 1),
     inset 0px 0px 4px rgba(255, 255, 255, 0.2);
-  box-shadow: inset 0 0 15px rgba(55, 84, 170, 0),
+  -webkit-box-shadow: inset 0 0 15px rgba(55, 84, 170, 0),
     inset 0 0 20px rgba(255, 255, 255, 0), 7px 7px 15px rgba(55, 84, 170, 0.15),
     -7px -7px 20px rgba(255, 255, 255, 1),
     inset 0px 0px 4px rgba(255, 255, 255, 0.2);
 }
 #contact button.submit:hover {
-  -webkit-box-shadow: inset 7px 7px 15px rgba(55, 84, 170, 0.15),
+  -webkit-appearance: none;
+  box-shadow: inset 7px 7px 15px rgba(55, 84, 170, 0.15),
     inset -7px -7px 20px rgba(255, 255, 255, 1),
     0px 0px 4px rgba(255, 255, 255, 0.2);
-  box-shadow: inset 7px 7px 15px rgba(55, 84, 170, 0.15),
+  -webkit-box-shadow: inset 7px 7px 15px rgba(55, 84, 170, 0.15),
     inset -7px -7px 20px rgba(255, 255, 255, 1),
     0px 0px 4px rgba(255, 255, 255, 0.2);
 }
