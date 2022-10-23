@@ -113,7 +113,7 @@
             <div class="eight columns">
 
                <!-- form -->
-               <form netlify action="/submissionSuccess.html" method="POST" id="contactForm2" name="contactForm2" netlify-honeypot="bot-field">
+               <form netlify action="/submissionSuccess.html" method="POST" id="contactForm2" name="contactForm2" netlify-honeypot="bot-field" data-netlify-recaptcha="true">
 					<fieldset>
 
                   <p class="u-visually-hidden">
@@ -139,6 +139,8 @@
                      <label for="contactMessage">Message <span class="required">*</span></label>
                      <textarea cols="50" rows="15" id="contactMessage" name="contactMessage" placeholder="Add here your message" ></textarea>
                   </div>
+                  
+                  <div data-netlify-recaptcha="true"></div>
 
                   <div>
                      <button type="submit" class="submit">Submit</button>
